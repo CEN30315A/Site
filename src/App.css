@@ -20,3 +20,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+.faq .collapse {
+  width: 80%;
+  text-align: left;
+  margin-left: 12%;
+}
+
+.faq .btn {
+  width: 90%;
+  font-size: 30px;
+  text-align: left;
+}
+.faq {
+  margin-bottom: 20px;
+}
