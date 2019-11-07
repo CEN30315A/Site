@@ -14,7 +14,7 @@ class Section extends Component{
                 <section className= "section">
                 </section>
                 <section className="section">
-                    <h1>{this.state.title}</h1>
+                    <h1>{this.state.title}fdsdfsd</h1>
                     <p>{this.state.body}</p>
                 </section>
             </div>
