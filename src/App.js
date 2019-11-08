@@ -54,12 +54,16 @@ function App() {
           dark={false}
           id="section5"
         />
-        <FaqSection
+        <Section
           title="FAQ"
           dark={true}
-          questAns = {questAns}
-          id="section6"
+          id="section6" 
         />
+        <div className="section-dark">
+          <FaqSection  
+            questAns = {questAns}
+          />
+        </div>
       </div>
   );
 }

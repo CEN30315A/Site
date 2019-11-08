@@ -2,8 +2,9 @@ import React from 'react';
 
 function Faq(props) {
     const { questAn } = props
+
     return <div className="faq">
-        <button className="btn btn-primary" type="button" data-toggle="collapse" data-target={"#collapse" + questAn.id} aria-expanded="false" aria-controls={"collapse" + questAn.id}>
+        <button className="btn btn-light" type="button" data-toggle="collapse" data-target={"#collapse" + questAn.id} aria-expanded="false" aria-controls={"collapse" + questAn.id}>
             {questAn.question}
         </button>
         <div className="collapse" id={"collapse" + questAn.id}>
@@ -14,3 +15,5 @@ function Faq(props) {
     </div>;
 }
 export default Faq;
+
+
