@@ -26,44 +26,42 @@ function App() {
         <Home
           title="Home"
           subtitle={dummyText}
-          dark={false}
+          dark={true}
           id="section1"
         />
         <AboutUs
           title="About Us"
           subtitle={dummyText}
-          dark={true}
+          dark={false}
           id="section2"
         />
         
         <Product
           title="The Product"
           subtitle={dummyText}
-          dark={false}
+          dark={true}
           id="section3"
         />
         <Order
           title="Order"
           subtitle={dummyText}
-          dark={true}
+          dark={false}
           id="section4"
         />
         <ContactUs
           title="Contact Us"
           subtitle={dummyText}
-          dark={false}
+          dark={true}
           id="section5"
         />
         <Section
           title="FAQ"
-          dark={true}
+          dark={false}
           id="section6" 
         />
-        <div className="section-dark">
-          <FaqSection  
-            questAns = {questAns}
-          />
-        </div>
+        <FaqSection  
+           questAns = {questAns}
+        />
       </div>
   );
 }

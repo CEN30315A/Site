@@ -101,5 +101,23 @@
    text-align: left;
 }
 
+.btn-outline-primary {
+  border-color: #62BFFA !important;
+  border-radius: 0 !important;
+  color: #62BFFA !important;
+}
+
+.btn-outline-primary:active, .btn-outline-primary:visited {
+  border-color: #62BFFA !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #62BFFA !important;
+  color: white !important;
+}
+
+
 
 
