@@ -8,6 +8,7 @@ import dummyText from "./components/DummyText";
 import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 import Product from './components/Product';
+import ProductImages from './components/ProductImages';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
 import data from './data/data';
@@ -44,6 +45,7 @@ function App() {
           dark={true}
           id="section3"
         />
+        <ProductImages />
         <Order
           title="Order"
           subtitle={dummyText}
