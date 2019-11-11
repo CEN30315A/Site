@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Section from './components/SectionComponent';
 import FaqSection from './components/FaqSection';
+import Navbar from "./components/Navbar";
+import dummyText from "./components/DummyText";
+import AboutUs from './components/AboutUs';
+import Home from './components/Home';
+import Product from './components/Product';
+import Order from './components/Order';
+import ContactUs from './components/ContactUs';
+
 
 const questAns = [
   {id: 1, question: 'question1', answer : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan magna nec scelerisque vulputate. Cras auctor sapien vitae sem auctor molestie. In sed est ultricies, euismod urna sit amet, volutpat purus. Mauris facilisis turpis quis sapien tincidunt, at semper est varius. Maecenas ut sem ac lacus scelerisque cursus non eu odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin molestie risus leo, ac efficitur augue sollicitudin sit amet. Nunc tristique tempor ligula a imperdiet. Ut dignissim leo eu nunc vulputate aliquet. Cras scelerisque nulla eget molestie hendrerit.'},
@@ -14,24 +22,47 @@ const questAns = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Section title="About Us" body= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut eleifend diam. Morbi finibus commodo sem vitae cursus. Sed ac justo risus. Phasellus quis dui non tortor aliquet hendrerit. Nam eu ligula ante. Maecenas fermentum lobortis ex, vitae rutrum turpis sollicitudin eget. Duis non eleifend ex, eu mollis urna. Nullam aliquet pellentesque condimentum. Integer at est ut risus eleifend fermentum a id lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean venenatis eleifend felis, id tincidunt nisl. Sed elementum, purus et accumsan imperdiet, lectus sem feugiat urna, vel ultrices risus turpis rhoncus enim."/>
-        <Section title="FAQ" body= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut eleifend diam. Morbi finibus commodo sem vitae cursus. Sed ac justo risus. Phasellus quis dui non tortor aliquet hendrerit. Nam eu ligula ante. Maecenas fermentum lobortis ex, vitae rutrum turpis sollicitudin eget. Duis non eleifend ex, eu mollis urna. Nullam aliquet pellentesque condimentum. Integer at est ut risus eleifend fermentum a id lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean venenatis eleifend felis, id tincidunt nisl. Sed elementum, purus et accumsan imperdiet, lectus sem feugiat urna, vel ultrices risus turpis rhoncus enim."/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <FaqSection questAns = {questAns}/>
-    </div>
+        <Navbar />
+        <Home
+          title="Home"
+          subtitle={dummyText}
+          dark={true}
+          id="section1"
+        />
+        <AboutUs
+          title="About Us"
+          subtitle={dummyText}
+          dark={false}
+          id="section2"
+        />
+        
+        <Product
+          title="The Product"
+          subtitle={dummyText}
+          dark={true}
+          id="section3"
+        />
+        <Order
+          title="Order"
+          subtitle={dummyText}
+          dark={false}
+          id="section4"
+        />
+        <ContactUs
+          title="Contact Us"
+          subtitle={dummyText}
+          dark={true}
+          id="section5"
+        />
+        <Section
+          title="FAQ"
+          dark={false}
+          id="section6" 
+        />
+        <FaqSection  
+           questAns = {questAns}
+        />
+      </div>
   );
 }
 

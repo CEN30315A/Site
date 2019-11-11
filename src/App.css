@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -22,9 +23,9 @@
 }
 
 .faq .collapse {
-  width: 80%;
+  width: 100%;
   text-align: left;
-  margin-left: 12%;
+  margin-left: 0%;
 }
 
 .faq .btn {
@@ -35,3 +36,88 @@
 .faq {
   margin-bottom: 20px;
 }
+
+
+
+:root {
+  --off-white: #fafafa;
+}
+.nav {
+  background-color: #62BFFA;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  height: 60px;
+  width: 60px;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-item > .active {
+    color: white;
+}
+
+.section {
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+   text-align: left;
+}
+
+.btn-outline-primary {
+  border-color: #62BFFA !important;
+  border-radius: 0 !important;
+  color: #62BFFA !important;
+}
+
+.btn-outline-primary:active, .btn-outline-primary:visited {
+  border-color: #62BFFA !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #62BFFA !important;
+  color: white !important;
+}
+
+
+
+
