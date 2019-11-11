@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Product from './components/Product';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
+import data from './data/data';
 
 
 const questAns = [
@@ -28,6 +29,7 @@ function App() {
           subtitle={dummyText}
           dark={true}
           id="section1"
+          data={data}
         />
         <AboutUs
           title="About Us"
