@@ -30,6 +30,7 @@ class ProductImages extends Component {
                     <h1>Procedures</h1>
                     <img
                         src={google}
+                        alt = "Video skintag"
                         onClick={this.handleShow}
                         className="nav-logo"
                     />
@@ -44,7 +45,7 @@ class ProductImages extends Component {
                             </ReactBootstrap.Modal.Title>
                         </ReactBootstrap.Modal.Header>
                         <ReactBootstrap.Modal.Body>
-                            <iframe width="465" height="315" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="465" height="315" title= "title1" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </ReactBootstrap.Modal.Body>
                         <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose}>
@@ -63,7 +64,7 @@ class ProductImages extends Component {
                             </ReactBootstrap.Modal.Title>
                         </ReactBootstrap.Modal.Header>
                         <ReactBootstrap.Modal.Body>
-                            <iframe width="465" height="315" src="https://www.youtube.com/embed/ZnKvQbpDYXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="465" height="315" title="title2" src="https://www.youtube.com/embed/ZnKvQbpDYXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </ReactBootstrap.Modal.Body>
                         <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose}>
