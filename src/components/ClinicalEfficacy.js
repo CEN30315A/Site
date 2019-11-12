@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ClinicalEfficacy({ title, subtitle, dark, id }) {
+export default function ClinicalEfficacy({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>

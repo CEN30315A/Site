@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../xdg_header_mod.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {animateScroll as scroll } from "react-scroll";
 
 export default class Header extends Component {
   scrollToTop = () => {

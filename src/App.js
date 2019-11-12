@@ -4,7 +4,6 @@ import Section from './components/SectionComponent';
 import FaqSection from './components/FaqSection';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import dummyText from "./components/DummyText";
 import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 import Product from './components/Product';
@@ -15,53 +14,48 @@ import data from './data/data';
 import ClinicalEfficacy from './components/ClinicalEfficacy';
 
 function App() {
+  let index = 0
   return (
     <div className="App">
         <Header/>
         <Navbar />
         <Home
           title="Home"
-          subtitle={dummyText}
-          dark={false}
-          id="section1"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
           data={data}
         />
         <AboutUs
           title="About Us"
-          subtitle={dummyText}
-          dark={false}
-          id="section2"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         
         <Product
           title="Product"
-          subtitle={dummyText}
-          dark={false}
-          id="section3"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <ProductImages />
         <ClinicalEfficacy
           title="Clinical Efficacy"
-          subtitle={dummyText}
-          dark={false}
-          id="section4"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <Order
           title="Order"
-          subtitle={dummyText}
-          dark={false}
-          id="section5"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <ContactUs
           title="Contact Us"
-          subtitle={dummyText}
-          dark={false}
-          id="section6"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <Section
           title="FAQ"
-          dark={false}
-          id="section7" 
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <FaqSection  
            questAns = {data.faq}
