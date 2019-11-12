@@ -13,7 +13,8 @@ function Faq(props) {
             {questAn.answer}
             </div>
         </div>
-    </div>;
+    </div>
+    ;
 }
 export default Faq;
 

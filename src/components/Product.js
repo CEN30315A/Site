@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Product({ title, subtitle, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
@@ -24,6 +25,8 @@ XDG holds the intellectual property along with the University of Florida, includ
 
         </p>
       </div>
+     
     </div>
+
   );
 }

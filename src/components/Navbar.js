@@ -11,12 +11,7 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <img
-            src={logo}
-            className="nav-logo"
-            alt="Logo"
-            onClick={this.scrollToTop}
-          />
+         
           <ul className="nav-items">
             <li className="nav-item">
               <Link
@@ -51,7 +46,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                The Product
+                Product
               </Link>
             </li>
             <li className="nav-item">
@@ -63,7 +58,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Order
+                Clinical Efficacy
               </Link>
             </li>
             <li className="nav-item">
@@ -75,13 +70,25 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Contact Us
+                Order
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
                 to="section6"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section7"
                 spy={true}
                 smooth={true}
                 offset={-70}
