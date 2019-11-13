@@ -27,7 +27,7 @@ class ProductImages extends Component {
 
 	render() {
 		return (
-            <div className="section-light">
+            <div className="section">
                 <div className="section-content">
                     <h1>Procedures</h1>
                      <Carousel>
