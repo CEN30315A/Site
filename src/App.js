@@ -32,7 +32,7 @@ function App() {
         />
         
         <Product
-          title="Product"
+          title="Digi-Clamp"
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
@@ -58,7 +58,7 @@ function App() {
           id={"section" + index}
         />
         <FaqSection  
-           questAns = {data.faq}
+          questAns = {data.faq}
         /><br/>
       </div>
   );

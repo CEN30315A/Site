@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../xdg_header_mod.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
@@ -10,7 +11,12 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-         
+        <img
+            src={logo}
+            className="nav-logo"
+            alt="Logo"
+            onClick={this.scrollToTop}
+          />
           <ul className="nav-items">
             <li className="nav-item">
               <Link
@@ -45,7 +51,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Product
+                Digi-Clamp
               </Link>
             </li>
             <li className="nav-item">
