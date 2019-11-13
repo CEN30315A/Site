@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../xdg_header_mod.svg";
+import logo from "../xdg_header_mod.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
@@ -11,7 +11,7 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-        <img
+          <img
             src={logo}
             className="nav-logo"
             alt="Logo"

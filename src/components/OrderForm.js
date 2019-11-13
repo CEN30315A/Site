@@ -36,41 +36,69 @@ class OrderForm extends Component {
                         </ReactBootstrap.Modal.Title>
                     </ReactBootstrap.Modal.Header>
                     <ReactBootstrap.Modal.Body>
-                    <form>
-					<input
-                        type = "text"
-                        placeholder = "Code"
-                        ref={ (code) => this.code = code }
-					/>
-				</form>
-				<form>
-					<input
-                        type="text"
-                        placeholder="Name"
-                        ref = { (name) => this.name = name }
-					/>
-				</form>
-				<form>
-					<input
-                        type = "text"
-                        placeholder = "Latitude"
-                        ref = { (latitude) => this.latitude = latitude }
-					/>
-				</form>
-				<form>
-					<input
-                        type = "text"
-                        placeholder = "Longitude"
-                        ref = { (longitude) => this.longitude = longitude }
-					/>
-				</form>
-				<form>
-					<input
-                        type = "text"
-                        placeholder = "Address"
-                        ref = { (address) => this.address = address }
-					/>
-				</form>
+                        <form>
+                        <input
+                            type = "text"
+                            placeholder = "First Name"
+                            ref={ (code) => this.code = code }
+                        />
+                        </form>
+                        <form>
+                            <input
+                                type="text"
+                                placeholder="Last Name"
+                                ref = { (name) => this.name = name }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "Address Line 1"
+                                ref = { (latitude) => this.latitude = latitude }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "Address Line 2"
+                                ref = { (longitude) => this.longitude = longitude }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "City"
+                                ref = { (address) => this.address = address }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "Zip Code"
+                                ref = { (address) => this.address = address }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "State"
+                                ref = { (address) => this.address = address }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "Email Address"
+                                ref = { (address) => this.address = address }
+                            />
+                        </form>
+                        <form>
+                            <input
+                                type = "text"
+                                placeholder = "Phone Number"
+                                ref = { (address) => this.address = address }
+                            />
+                        </form>
                     </ReactBootstrap.Modal.Body>
                     <ReactBootstrap.Modal.Footer>
                         <button class="btn btn-outline-primary" onClick={this.handleClose}>
