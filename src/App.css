@@ -51,6 +51,7 @@
   height: 80px;
   z-index: 1000;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  
 }
 /*#245478 */
 .header{
@@ -66,7 +67,7 @@
 .nav-logo {
   height: 70px;
   float: left;
-  padding-left: 5px;
+  padding-left: -100px;
 }
 
 .nav-logo:hover {
