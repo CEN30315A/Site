@@ -67,12 +67,13 @@
 .nav-logo {
   height: 70px;
   float: left;
-  padding-left: -100px;
-  
+  padding-left: -101px;
 }
 
 .nav-logo:hover {
   cursor: pointer;
+
+
 }
 
 .nav .nav-content {
