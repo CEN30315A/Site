@@ -10,7 +10,7 @@ import Product from './components/Product';
 import ProductImages from './components/ProductImages';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
-import data from './data/data';
+import Data from './data/data';
 import ClinicalEfficacy from './components/ClinicalEfficacy';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           title="Home"
           dark={index++ % 2 === 0}
           id={"section" + index}
-          data={data}
+          data={Data}
         />
         <AboutUs
           title="About Us"
@@ -58,7 +58,7 @@ function App() {
           id={"section" + index}
         />
         <FaqSection  
-          questAns = {data.faq}
+          questAns = {Data.faq}
         /><br/>
       </div>
   );
