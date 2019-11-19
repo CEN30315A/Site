@@ -25,8 +25,6 @@
 .faq .collapse {
   padding-left: 40px;
   padding-right: 40px;
-  
-  
 }
 
 .faq .btn {
@@ -56,10 +54,8 @@
 /*#245478 */
 .header{
   background-color:white   ;
-  position: sticky;
   top: 0px;
-  width: auto;
-  height: auto;
+  height: 30%;
   z-index: -1;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
@@ -132,7 +128,10 @@ li.nav-item > a.active {
   color: #F6D058 !important;
 }
 
-
+.primary-color {
+    background-color: #245478 !important;
+    color: #F6D058 !important;
+}
 
 
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import Faq from './Faq';
 
-export default function FaqSection(props) {
-  const {questAns} = props
-  return <div className="section">
-  {questAns.map(obj => <Faq questAn = {obj} key={obj.id}/>)}
-  </div>;
+export default function FaqSection({questAns, title, dark, id}) {
+  return (
+    <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
+        <h1>{title}</h1>
+        {questAns.map(obj => <Faq questAn = {obj} key={obj.id}/>)}
+      </div>
+    </div>
+  );
 }
