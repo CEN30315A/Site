@@ -56,11 +56,11 @@
 /*#245478 */
 .header{
   background-color:white   ;
-  position: sticky;
+  
   top: 0px;
   width: auto;
   height: auto;
-  z-index: -1;
+  
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
