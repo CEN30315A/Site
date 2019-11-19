@@ -36,6 +36,8 @@
   width: 85%;
   margin-bottom: 30px;
   padding-left: 20%;
+  background: #333;
+  color: black;
 }
 
 :root {
