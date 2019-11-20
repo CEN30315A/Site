@@ -23,7 +23,6 @@ function Faq(props) {
             &nbsp;
             &nbsp;
             &nbsp;
-            &nbsp;
             <i class="fa fa-plus"></i>
         </button>
         <div className="collapse" id={"collapse" + questAn.id}>
