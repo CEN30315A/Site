@@ -22,24 +22,6 @@
   color: #09d3ac;
 }
 
-.faq .collapse {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.faq .btn {
-  width: 80%;
-  font-size: 30px;
-  text-align: left;
-}
-.faq {
-  width: 85%;
-  margin-bottom: 30px;
-  padding-left: 20%;
-  background: #333;
-  color: black;
-}
-
 :root {
   --off-white: #fafafa;
 }
@@ -135,6 +117,22 @@ li.nav-item > a.active {
     color: #F6D058 !important;
 }
 
+.faq .btn {
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
+  background-color: #F6D058;
+  color: #245478;
+}
+.faq {
+  width: 85%;
+  margin-bottom: 30px;
+  padding-left: 20%;
+  background: #333;
+  color: black;
+}
 
-
-
+.answer {
+  background-color: #F6D058;
+  color: #245478;
+}

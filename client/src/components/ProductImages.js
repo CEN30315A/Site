@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import * as ReactBootstrap from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import logo from "../placeholder.png";
-import ModalComponent from './ModalComponent';
 
 export default class ProductImages extends Component {
 	constructor(props, context) {
@@ -65,7 +64,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title1" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose}>
                               Close
@@ -84,7 +83,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title2" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose2}>
                               Close
@@ -103,7 +102,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="765" height="575" title= "title1" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="765" height="575" title= "title3" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose3}>
@@ -126,7 +125,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title4" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose}>
                               Close
@@ -145,7 +144,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title5" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose2}>
                               Close
@@ -164,7 +163,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="765" height="575" title= "title1" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="765" height="575" title= "title6" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose3}>
@@ -187,7 +186,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title7" src="https://www.youtube.com/embed/aQkPcPqTq4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose}>
                               Close
@@ -206,7 +205,7 @@ export default class ProductImages extends Component {
                           <ReactBootstrap.Modal.Header closeButton>
                           </ReactBootstrap.Modal.Header>
                           <ReactBootstrap.Modal.Body>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
+                            <iframe width="560" height="315" title="title8" src="https://www.youtube.com/embed/rTfa-9aCTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
                             <button class="btn btn-outline-primary" onClick={this.handleClose2}>
                               Close
