@@ -33,8 +33,7 @@ exports.email = async function (req, res) {
   req.body.recipients.map(recipient => {
     mailOptions.to += recipient + ", ";
   });
-
-  console.log(mailOptions.to);
+  
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       res.send(error);
