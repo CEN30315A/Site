@@ -29,20 +29,17 @@ exports.email = async function (req, res) {
     mailOptions.text = req.body.text;
   }
 
-  
-  const promises = req.body.recipients.map(async recipient => {
-    mailOptions.to = recipient;
-    await transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        return error;
-      } else {
-        return 'Email sent: ' + info.response;
-      }
-    });
+  mailOptions.to = "";
+  req.body.recipients.map(recipient => {
+    mailOptions.to += recipient + ", ";
   });
 
-  const results = await Promise.all(promises)
-
-  console.log(results);
-  res.send(results);
+  console.log(mailOptions.to);
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      res.send(error);
+    } else {
+      res.send(info);
+    }
+  });
 }
