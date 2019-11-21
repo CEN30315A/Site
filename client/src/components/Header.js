@@ -13,7 +13,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-         <Carousel>
+         <Carousel fade="true" indicators="true" controls="true" >
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -21,8 +21,8 @@ export default class Header extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Introducing the Digi-Clamp.</h3>
+              <p>Old Problems. New Solution.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -32,8 +32,8 @@ export default class Header extends Component {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Introducing the Digi-Clamp.</h3>
+              <p>Old Problems. New Solution.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -43,8 +43,8 @@ export default class Header extends Component {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Introducing the Digi-Clamp.</h3>
+              <p>Old Problems. New Solution.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
