@@ -19,6 +19,7 @@ export default class Header extends Component {
               className="d-block w-100"
               src= {plc1}
               alt="First slide"
+              //style={{height: 500 }}
             />
             <Carousel.Caption>
               <h3>Introducing the Digi-Clamp.</h3>
