@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Section from './components/SectionComponent';
 import FaqSection from './components/FaqSection';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -8,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 import Product from './components/Product';
 import ProductImages from './components/ProductImages';
+import ClinicalEfficacy from './components/ClinicalEfficacy';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
 import Data from './data/data';
@@ -42,6 +42,8 @@ if (localStorage.jwtToken) {
     window.location.href = "./login";
   }
 }
+//import Footer from './components/Footer';
+
 
 function App() {
   let index = 0
@@ -49,6 +51,7 @@ function App() {
     <Provider store={store}>
     <Router>
     <div className="App">
+
         <Header/>
         <Navbar />
         <Home
@@ -90,7 +93,10 @@ function App() {
           id={"section" + index}
         />
         <FaqSection  
-          questAns = {Data.faq}
+          questAns={Data.faq}
+        title="FAQ"
+        dark={index++ % 2 === 0}
+        id={"section" + index}
         />
         
         <Route exact path="/" component={Landing}/>
@@ -103,6 +109,7 @@ function App() {
       </div>
       </Router>
       </Provider>
+
   );
 }
 
