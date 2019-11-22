@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import FaqSection from './components/FaqSection';
+import Section from './components/SectionComponent';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutUs from './components/AboutUs';
@@ -11,7 +12,6 @@ import ClinicalEfficacy from './components/ClinicalEfficacy';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
 import Data from './data/data';
-import ClinicalEfficacy from './components/ClinicalEfficacy';
 import Landing from './components/Landing';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Register from "./components/auth/Register";
