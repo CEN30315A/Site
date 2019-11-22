@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './data/data';
-//import Email from './config';
 
 ReactDOM.render(<App data={data}/>, document.getElementById('root'));
 
