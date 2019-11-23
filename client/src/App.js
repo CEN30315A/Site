@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import FaqSection from './components/FaqSection';
-import Section from './components/SectionComponent';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutUs from './components/AboutUs';
@@ -87,16 +86,11 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        <Section
+        <FaqSection  
+          questAns={Data.faq}
           title="FAQ"
           dark={index++ % 2 === 0}
           id={"section" + index}
-        />
-        <FaqSection  
-          questAns={Data.faq}
-        title="FAQ"
-        dark={index++ % 2 === 0}
-        id={"section" + index}
         />
         
         <Route exact path="/" component={Landing}/>
