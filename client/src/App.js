@@ -89,11 +89,12 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
+
         <FaqSection  
           questAns={Data.faq}
-          title="FAQ"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
+        title="FAQ"
+        dark={index++ % 2 === 0}
+        id={"section" + index}
         />
         
         <Route exact path="/" component={Landing}/>
