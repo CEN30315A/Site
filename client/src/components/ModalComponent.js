@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as ReactBootstrap from 'react-bootstrap';
 
-function ModalComponent ({body}) { 
+export default function ModalComponent ({body}) { 
 
     const [show, setShow] = useState(false);
 
@@ -35,5 +35,3 @@ function ModalComponent ({body}) {
         </div>
 	);
 };
-
-export default ModalComponent;

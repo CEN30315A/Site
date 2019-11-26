@@ -1,17 +1,54 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
+import logo from "../placeholder.png";
 
 export default function ClinicalEfficacy({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>
         <h1>{title}</h1>
-        <p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis natoque. Ipsum a arcu cursus vitae. Massa sapien faucibus et molestie ac feugiat sed. Turpis egestas maecenas pharetra convallis posuere morbi leo. Duis at consectetur lorem donec massa sapien faucibus et molestie. Purus sit amet luctus venenatis lectus. Pellentesque nec nam aliquam sem et tortor consequat id porta. Sapien et ligula ullamcorper malesuada. Fringilla ut morbi tincidunt augue interdum velit euismod. Vitae turpis massa sed elementum tempus egestas sed. Netus et malesuada fames ac turpis egestas integer eget aliquet. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis.
-
-Nisi est sit amet facilisis. Vitae congue eu consequat ac felis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia. Nisl condimentum id venenatis a condimentum. Rutrum tellus pellentesque eu tincidunt tortor. Semper auctor neque vitae tempus quam. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Enim lobortis scelerisque fermentum dui faucibus. Volutpat ac tincidunt vitae semper quis lectus nulla at.
-
-Pellentesque id nibh tortor id aliquet lectus proin.
-        </p>
+        <CardDeck>
+          <Card className="card-color" text="white" style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={logo} />
+            <Card.Body>
+              <Card.Title>Skin Tags</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+              <Card.Link href="#">Statistical Results</Card.Link>
+              <br/>
+              <Card.Link href="#">Link to Research Paper</Card.Link>
+            </Card.Body>
+          </Card>
+          <Card className="card-color" text="white" style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={logo} />
+            <Card.Body>
+              <Card.Title>Preauricular Tags</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </Card.Text>
+                <button class="btn btn-outline-primary">
+                  White Paper
+                </button>
+            </Card.Body>
+          </Card>
+          <Card className="card-color" text="white" style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={logo} />
+            <Card.Body>
+              <Card.Title>Polydoctyly Tags</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+              <button class="btn btn-outline-primary">
+                White Paper
+              </button>
+            </Card.Body>
+          </Card>
+        </CardDeck>
       </div>
     </div>
   );
