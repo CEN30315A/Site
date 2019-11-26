@@ -87,11 +87,7 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        <Section
-          title="FAQ"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
+        
         <FaqSection  
           questAns={Data.faq}
         title="FAQ"
