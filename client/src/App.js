@@ -64,7 +64,6 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        
         <Product
           title="Digi-Clamp"
           dark={index++ % 2 === 0}
@@ -72,8 +71,8 @@ function App() {
         />
         <ProductImages 
           title="Procedures"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
+          //dark={index++ % 2 === 0}
+          //id={"section" + index}
         />
         <ClinicalEfficacy
           title="Clinical Efficacy"

@@ -99,17 +99,20 @@ li.nav-item > a.active {
 
 .btn-outline-primary {
   border-color: #245478 !important;
-  color: #245478 !important;
+  background-color: #245478 !important;
+  color: #F6D058 !important;
 }
 
 .btn-outline-primary:active, .btn-outline-primary:visited {
-  border-color: #245478 !important;
-  color: #F6D058 !important;
+  border-color: #F6D058 !important;
+  background-color: #F6D058 !important;
+  color: #245478 !important;
 }
 
 .btn-outline-primary:hover {
-  background-color: #245478 !important;
-  color: #F6D058 !important;
+  border-color: #F6D058 !important;
+  background-color: #F6D058 !important;
+  color: #245478 !important;
 }
 
 .primary-color {
@@ -117,12 +120,14 @@ li.nav-item > a.active {
     color: #F6D058 !important;
 }
 
+.card-color {
+  background-color: #245478 !important;
+}
+
 .faq .btn {
   width: 100%;
   font-size: 30px;
   text-align: left;
-  background-color: #F6D058;
-  color: #245478;
 }
 .faq {
   width: 85%;
@@ -132,7 +137,7 @@ li.nav-item > a.active {
 }
 
 .answer {
-  background-color: #F6D058;
-  color: #245478;
+  background-color: #245478;
+  color: #F6D058;
 }
 
