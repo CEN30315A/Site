@@ -70,7 +70,11 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        <ProductImages />
+        <ProductImages 
+          title="Procedures"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
+        />
         <ClinicalEfficacy
           title="Clinical Efficacy"
           dark={index++ % 2 === 0}
