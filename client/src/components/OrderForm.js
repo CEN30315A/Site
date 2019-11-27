@@ -10,75 +10,99 @@ function OrderForm() {
 
 		return (
             <div>
-                <button class="btn btn-outline-primary" type="button" onClick={handleShow}>
-                    <i class="fa fa-shopping-cart"></i>
+                <button className="btn btn-outline-primary" type="button" onClick={handleShow}>
+                    <i className="fa fa-shopping-cart"></i>
                     &nbsp;
                     Purchase Digi-Clamp
                 </button>
+
                 <ReactBootstrap.Modal show={show} onHide={handleShow}>
-                    <ReactBootstrap.Modal.Header closeButton>
-                        <ReactBootstrap.Modal.Title>
-                            Order Form
-                        </ReactBootstrap.Modal.Title>
-                    </ReactBootstrap.Modal.Header>
-                    <ReactBootstrap.Modal.Body>
-                        <ReactBootstrap.Form>                       
-                            <ReactBootstrap.Form.Row>
-                                <ReactBootstrap.Col>
-                                    <ReactBootstrap.Form.Label>First Name</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control placeholder="First name" />
-                                </ReactBootstrap.Col>
-                                <ReactBootstrap.Col>
-                                    <ReactBootstrap.Form.Label>Last Name</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control placeholder="Last name" />
-                                </ReactBootstrap.Col>
-                            </ReactBootstrap.Form.Row>
-                            <ReactBootstrap.Form.Row>
-                                <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridEmail">
-                                    <ReactBootstrap.Form.Label>Email</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control type="email" placeholder="Enter email" />
+                    <ReactBootstrap.Form action="/api/orders/submit_order" method="post">
+                        <ReactBootstrap.Modal.Header closeButton>
+                            <ReactBootstrap.Modal.Title>
+                                Order Form
+                            </ReactBootstrap.Modal.Title>
+                        </ReactBootstrap.Modal.Header>
+
+                        <ReactBootstrap.Modal.Body>
+                                <ReactBootstrap.Form.Row>
+                                    <ReactBootstrap.Col>
+                                        <ReactBootstrap.Form.Label>First Name</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control placeholder="First name" />
+                                    </ReactBootstrap.Col>
+
+                                    <ReactBootstrap.Col>
+                                        <ReactBootstrap.Form.Label>Last Name</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control placeholder="Last name" />
+                                    </ReactBootstrap.Col>
+                                </ReactBootstrap.Form.Row>
+
+                                <ReactBootstrap.Form.Row>
+                                    <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridEmail">
+                                        <ReactBootstrap.Form.Label>Email</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control type="email" placeholder="Enter email" />
+                                    </ReactBootstrap.Form.Group>
+                                    <ReactBootstrap.Form.Group as={ReactBootstrap.Col} >
+                                        <ReactBootstrap.Form.Label>Phone Number</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control placeholder="Phone Number" />
+                                    </ReactBootstrap.Form.Group>
+                                </ReactBootstrap.Form.Row>
+
+                                <ReactBootstrap.Form.Group controlId="formGridAddress1">
+                                    <ReactBootstrap.Form.Label>Address</ReactBootstrap.Form.Label>
+                                    <ReactBootstrap.Form.Control placeholder="1234 Main St" />
                                 </ReactBootstrap.Form.Group>
-                                <ReactBootstrap.Form.Group as={ReactBootstrap.Col} >
-                                    <ReactBootstrap.Form.Label>Phone Number</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control placeholder="Phone Number" />
+
+                                <ReactBootstrap.Form.Group controlId="formGridAddress2">
+                                    <ReactBootstrap.Form.Label>Address 2</ReactBootstrap.Form.Label>
+                                    <ReactBootstrap.Form.Control placeholder="Apartment, studio, or floor" />
                                 </ReactBootstrap.Form.Group>
-                            </ReactBootstrap.Form.Row>
-                            <ReactBootstrap.Form.Group controlId="formGridAddress1">
-                                <ReactBootstrap.Form.Label>Address</ReactBootstrap.Form.Label>
-                                <ReactBootstrap.Form.Control placeholder="1234 Main St" />
-                            </ReactBootstrap.Form.Group>
-                            <ReactBootstrap.Form.Group controlId="formGridAddress2">
-                                <ReactBootstrap.Form.Label>Address 2</ReactBootstrap.Form.Label>
-                                <ReactBootstrap.Form.Control placeholder="Apartment, studio, or floor" />
-                            </ReactBootstrap.Form.Group>
-                            <ReactBootstrap.Form.Row>
-                                <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridCity">
-                                    <ReactBootstrap.Form.Label>City</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control />
-                                </ReactBootstrap.Form.Group>
-                                <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridState">
-                                    <ReactBootstrap.Form.Label>State</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control as="select">
-                                        <option>Choose...</option>
-                                        <option>...</option>
-                                    </ReactBootstrap.Form.Control>
-                                </ReactBootstrap.Form.Group>
-                                <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridZip">
-                                    <ReactBootstrap.Form.Label>Zip</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control />
-                                </ReactBootstrap.Form.Group>
-                            </ReactBootstrap.Form.Row>
+
+                                <ReactBootstrap.Form.Row>
+                                    <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridCity">
+                                        <ReactBootstrap.Form.Label>City</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control />
+                                    </ReactBootstrap.Form.Group>
+
+                                    <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridState">
+                                        <ReactBootstrap.Form.Label>State</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control as="select">
+                                            <option>Choose...</option>
+                                            <option>AL</option>
+                                            <option>AK</option>
+                                            <option>AZ</option>
+                                            <option>AR</option>
+                                            <option>CA</option>
+                                            <option>CO</option>
+                                            <option>CT</option>
+                                            <option>DE</option>
+                                            <option>FL</option>
+                                            <option>GA</option>
+                                            <option>HI</option>
+                                            <option>ID</option>
+                                            <option>IL</option>
+                                        </ReactBootstrap.Form.Control>
+                                    </ReactBootstrap.Form.Group>
+
+                                    <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridZip">
+                                        <ReactBootstrap.Form.Label>Zip</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control />
+                                    </ReactBootstrap.Form.Group>
+                                </ReactBootstrap.Form.Row>
+                            </ReactBootstrap.Modal.Body>
+
+                            <ReactBootstrap.Modal.Footer>
+                                <button class="btn btn-outline-primary" onClick={handleShow}>
+                                    Cancel
+                                </button>
+
+                                {/* <input class="btn btn-outline-primary" type="submit" id="submitDetails" name="submitDetails" value="Submit" /> */}
+                                <button class="btn btn-outline-primary" type="Submit">
+                                    Checkout
+                                </button>
+                            </ReactBootstrap.Modal.Footer>
                         </ReactBootstrap.Form>
-                    </ReactBootstrap.Modal.Body>
-                    <ReactBootstrap.Modal.Footer>
-                        <button class="btn btn-outline-primary" onClick={handleShow}>
-                            Cancel
-                        </button>
-                        <button class="btn btn-outline-primary">
-                            Checkout
-                        </button>
-                    </ReactBootstrap.Modal.Footer>
-                </ReactBootstrap.Modal>
+                    </ReactBootstrap.Modal>
             </div>
 		);
 	}
