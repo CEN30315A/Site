@@ -31,6 +31,8 @@ const Order = require("../../models/Orders");
 
     let order= new Order(req.body)
     order.save()
+    console.log(order)
+    console.log(req.body)
 
 })
 module.exports= router;

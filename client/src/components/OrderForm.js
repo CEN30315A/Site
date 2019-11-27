@@ -28,45 +28,45 @@ function OrderForm() {
                                 <ReactBootstrap.Form.Row>
                                     <ReactBootstrap.Col>
                                         <ReactBootstrap.Form.Label>First Name</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control placeholder="First name" />
+                                        <ReactBootstrap.Form.Control placeholder="First name" name="firstname" id="firstname" />
                                     </ReactBootstrap.Col>
 
                                     <ReactBootstrap.Col>
                                         <ReactBootstrap.Form.Label>Last Name</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control placeholder="Last name" />
+                                        <ReactBootstrap.Form.Control placeholder="Last name" name="lastname" id="lastname" />
                                     </ReactBootstrap.Col>
                                 </ReactBootstrap.Form.Row>
 
                                 <ReactBootstrap.Form.Row>
                                     <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridEmail">
                                         <ReactBootstrap.Form.Label>Email</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control type="email" placeholder="Enter email" />
+                                        <ReactBootstrap.Form.Control type="email" placeholder="Enter email" name="email" id="email" />
                                     </ReactBootstrap.Form.Group>
                                     <ReactBootstrap.Form.Group as={ReactBootstrap.Col} >
                                         <ReactBootstrap.Form.Label>Phone Number</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control placeholder="Phone Number" />
+                                        <ReactBootstrap.Form.Control placeholder="Phone Number" name="phonenumber" id="phonenumber" />
                                     </ReactBootstrap.Form.Group>
                                 </ReactBootstrap.Form.Row>
 
                                 <ReactBootstrap.Form.Group controlId="formGridAddress1">
                                     <ReactBootstrap.Form.Label>Address</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control placeholder="1234 Main St" />
+                                    <ReactBootstrap.Form.Control placeholder="1234 Main St" name="address1" id="address1" />
                                 </ReactBootstrap.Form.Group>
 
                                 <ReactBootstrap.Form.Group controlId="formGridAddress2">
                                     <ReactBootstrap.Form.Label>Address 2</ReactBootstrap.Form.Label>
-                                    <ReactBootstrap.Form.Control placeholder="Apartment, studio, or floor" />
+                                    <ReactBootstrap.Form.Control placeholder="Apartment, studio, or floor" name="address2" id="address2" />
                                 </ReactBootstrap.Form.Group>
 
                                 <ReactBootstrap.Form.Row>
                                     <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridCity">
                                         <ReactBootstrap.Form.Label>City</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control />
+                                        <ReactBootstrap.Form.Control name="city" id="city" />
                                     </ReactBootstrap.Form.Group>
 
                                     <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridState">
                                         <ReactBootstrap.Form.Label>State</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control as="select">
+                                        <ReactBootstrap.Form.Control as="select" name="stateUS" id="stateUS">
                                             <option>Choose...</option>
                                             <option>AL</option>
                                             <option>AK</option>
@@ -86,7 +86,7 @@ function OrderForm() {
 
                                     <ReactBootstrap.Form.Group as={ReactBootstrap.Col} controlId="formGridZip">
                                         <ReactBootstrap.Form.Label>Zip</ReactBootstrap.Form.Label>
-                                        <ReactBootstrap.Form.Control />
+                                        <ReactBootstrap.Form.Control name="zipcode" id="zipcode" />
                                     </ReactBootstrap.Form.Group>
                                 </ReactBootstrap.Form.Row>
                             </ReactBootstrap.Modal.Body>

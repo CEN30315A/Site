@@ -4,39 +4,39 @@ const Schema = mongoose.Schema;
 const OrderSchema = new Schema({
   firstname: {
     type: String,
-    required: true
+    //required: true
   },
   lastname: {
     type: String,
-    required: true
+    //required: true
   },
   email: {
     type: String,
-    required: true
+    //required: true
   },
   phonenumber: {
     type: String,
-    required: true
+    //required: true
   },
-  address: {
+  address1: {
     type: String,
-    required: true
+    //required: true
   },
-  adress2: {
+  address2: {
     type: String,
-    required: true
+    //required: true
   },
   city: {
     type: String,
-    required: true
+    //required: true
   },
   stateUS: {
     type: String,
-    required: true
+    //required: true
   },
   zipcode: {
     type: String,
-    required: true
+    //required: true
   },
   date: {
     type: Date,
