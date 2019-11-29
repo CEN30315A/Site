@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../xdg_header_mod.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+ import { NavLink, Switch, Route } from 'react-router-dom';
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -19,7 +20,7 @@ export default class Navbar extends Component {
           />
           <ul className="nav-items">
             <li className="nav-item">
-              <Link
+              <NavLink
                 activeClass="active"
                 to="section1"
                 spy={true}
@@ -28,19 +29,19 @@ export default class Navbar extends Component {
                 duration={500}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 activeClass="active"
-                to="section2"
+                to="/about"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
               <Link

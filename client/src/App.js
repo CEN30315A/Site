@@ -44,9 +44,85 @@ if (localStorage.jwtToken) {
 }
 //import Footer from './components/Footer';
 
+/* For later
+
+const Routes = () => (
+    <Switch>
+      <Route exact path="/" component={Landing}/>
+      <Route exact path="/register" component={Register} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/login" component={Login} />
+      <PrivateRoute exact path="/dashboard" component={Dashboard} />
+    </Switch>
+  );
+*/
 
 function App() {
   let index = 0
+
+  const About = () => (
+  <div className='about'>
+    <AboutUs
+          title="About Us"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
+        />
+  </div>
+  );
+
+  const Base = () => (
+  <div className='baser'>
+    <Home
+        title="Home"
+        dark={index++ % 2 === 0}
+        id={"section" + index}
+        data={Data}
+    />
+    <Product
+          title="Digi-Clamp"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
+        />
+    <Order
+        title="Order"
+        dark={index++ % 2 === 0}
+        id={"section" + index}
+    />
+    <ContactUs
+      title="Contact Us"
+      dark={index++ % 2 === 0}
+      id={"section" + index}
+    />
+
+    <FaqSection  
+      questAns={Data.faq}
+    title="FAQ"
+    dark={index++ % 2 === 0}
+    id={"section" + index}
+    />
+  </div>
+  );
+
+  const Procedure = () => (
+    <div className='procedures'>
+      <ProductImages 
+            title="Procedures"
+            //dark={index++ % 2 === 0}
+            //id={"section" + index}
+          />
+    </div>
+  );
+
+  const Efficacy = () => (
+    <div className='efficacy'>
+      <ClinicalEfficacy
+            title="Clinical Efficacy"
+            dark={index++ % 2 === 0}
+            id={"section" + index}
+          />
+    </div>
+  );
+
   return (
     <Provider store={store}>
     <Router>
@@ -54,56 +130,17 @@ function App() {
 
         <Header/>
         <Navbar />
-        <Home
-          title="Home"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-          data={Data}
-        />
-        <AboutUs
-          title="About Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <Product
-          title="Digi-Clamp"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <ProductImages 
-          title="Procedures"
-          //dark={index++ % 2 === 0}
-          //id={"section" + index}
-        />
-        <ClinicalEfficacy
-          title="Clinical Efficacy"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <Order
-          title="Order"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <ContactUs
-          title="Contact Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-
-        <FaqSection  
-          questAns={Data.faq}
-        title="FAQ"
-        dark={index++ % 2 === 0}
-        id={"section" + index}
-        />
-        
-        <Route exact path="/" component={Landing}/>
-        <Route exact path="/register" component={Register} />
+        <Switch>
+          <Route exact path="/" component={Base}/>
+          <Route exact path="/home" component={Base}/>
+          <Route exact path="/procedures" component={Procedure}/>
+          <Route exact path="/efficacy" component={Efficacy}/>
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
-         <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
-            </Switch>
+          <PrivateRoute exact path="/dashboard" component={Dashboard} />
+        </Switch>
+
         <Footer />
       </div>
       </Router>
