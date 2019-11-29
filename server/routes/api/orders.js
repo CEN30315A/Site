@@ -18,6 +18,7 @@ const Order = require("../../models/Orders");
 //   });
 
   router.post('/submit_order', function(req,res){ 
+      var quantity= req.body.quantity;
     var firstname= req.body.firstname;
     var lastname= req.body.lastname;
     var email= req.body.email;

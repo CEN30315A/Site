@@ -25,6 +25,12 @@ function OrderForm() {
                         </ReactBootstrap.Modal.Header>
 
                         <ReactBootstrap.Modal.Body>
+                            <ReactBootstrap.Form.Row>
+                            <ReactBootstrap.Col>
+                                        <ReactBootstrap.Form.Label>Quantity</ReactBootstrap.Form.Label>
+                                        <ReactBootstrap.Form.Control placeholder="Quantity" name="quantity" id="quantity" />
+                                    </ReactBootstrap.Col>
+                            </ReactBootstrap.Form.Row>
                                 <ReactBootstrap.Form.Row>
                                     <ReactBootstrap.Col>
                                         <ReactBootstrap.Form.Label>First Name</ReactBootstrap.Form.Label>
@@ -81,6 +87,43 @@ function OrderForm() {
                                             <option>HI</option>
                                             <option>ID</option>
                                             <option>IL</option>
+                                            <option>IN</option>
+                                            <option>IA</option>
+                                            <option>KS</option>
+                                            <option>KY</option>
+                                            <option>LA</option>
+                                            <option>ME</option>
+                                            <option>MD</option>
+                                            <option>MA</option>
+                                            <option>MI</option>
+                                            <option>MN</option>
+                                            <option>MS</option>
+                                            <option>MO</option>
+                                            <option>MT</option>
+                                            <option>NE</option>
+                                            <option>NV</option>
+                                            <option>NH</option>
+                                            <option>NJ</option>
+                                            <option>NM</option>
+                                            <option>NY</option>
+                                            <option>NC</option>
+                                            <option>ND</option>
+                                            <option>OH</option>
+                                            <option>OK</option>
+                                            <option>OR</option>
+                                            <option>PA</option>
+                                            <option>RI</option>
+                                            <option>SC</option>
+                                            <option>SD</option>
+                                            <option>TN</option>
+                                            <option>TX</option>
+                                            <option>UT</option>
+                                            <option>VT</option>
+                                            <option>VA</option>
+                                            <option>WA</option>
+                                            <option>WV</option>
+                                            <option>WI</option>
+                                            <option>WY</option>
                                         </ReactBootstrap.Form.Control>
                                     </ReactBootstrap.Form.Group>
 
