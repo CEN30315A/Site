@@ -39,5 +39,6 @@
     "supertest": "^4.0.2",
     "validator": "^12.1.0"
   },
-  "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme"
+  "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme",
+  "proxy": "http://localhost:5000"
 }
