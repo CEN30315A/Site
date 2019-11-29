@@ -1,11 +1,11 @@
-const examples = require('../controllers/server.controller.js'),
+const controller = require('../controllers/server.controller.js'),
     express = require('express'), 
     router = express.Router()
-
-router.route('/hello/')
-  .get(examples.hello);
   
 router.route('/email/')
-  .post(examples.email);
+  .post(controller.email);
+
+router.route('/c/*')
+  .get(controller.campaign);
   
 module.exports = router;
