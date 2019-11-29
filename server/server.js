@@ -1,17 +1,9 @@
-//const express = require('./config/express.js')
- 
-// Use env port or default
-//const port = process.env.PORT || 5000;
-
-//const app = express.init()
-//app.listen(port, () => console.log(`Server now running on port ${port}!`));
-
-const express = require("express");
+const express = require("./config/express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
-const app = express();
+const app = express.init();
 // Bodyparser middleware
 app.use(
   bodyParser.urlencoded({
