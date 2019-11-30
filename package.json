@@ -40,5 +40,8 @@
     "validator": "^12.1.0"
   },
   "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme",
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
+  }
 }
