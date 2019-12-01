@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import FaqSection from './components/FaqSection';
-import Section from './components/SectionComponent';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutUs from './components/AboutUs';
