@@ -20,16 +20,16 @@ export default class Navbar extends Component {
           />
           <ul className="nav-items">
             <li className="nav-item">
-              <NavLink
+              <a
                 activeClass="active"
-                to="/"
+                href="/#section1"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Home
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
               <NavLink
@@ -44,16 +44,16 @@ export default class Navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="/#section2"
+                href="/#section2"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Digi-Clamp
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <NavLink
@@ -80,41 +80,47 @@ export default class Navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
+              <a
                 activeClass="active"
-                to="/#section3"
+                href="/#section3"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Order
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="/#section4"
+                href="/#section4"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
-            <li className="nav-item">
-              <Link
+            
+            <li className="nav-item" >
+    
+              <a
                 activeClass="active"
-                to="/#section5"
+                href="/#section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
+              
                 FAQ
-              </Link>
+              
+              </a>
+            
             </li>
+            
           </ul>
         </div>
       </nav>
