@@ -1,5 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
   return (
@@ -7,26 +9,98 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
+            <h5 className="title">Follow XDG Technologies:</h5>
+            <SocialIcon url="https://www.facebook.com/xdgtechnologies" bgColor="#F6D058" />
+            &nbsp;
+            &nbsp;
+            <SocialIcon url="https://twitter.com/xdgtechnologies" bgColor="#F6D058" />
           </MDBCol>
           <MDBCol md="6">
             <h5 className="title">Links</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Link 1</a>
+                <Link
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Home
+                </Link>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 2</a>
+                <Link
+                  activeClass="active"
+                  to="section2"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  About Us
+                </Link>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 3</a>
+                <Link
+                  activeClass="active"
+                  to="section3"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Digi-Clamp
+                </Link>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 4</a>
+                <Link
+                  activeClass="active"
+                  to="section4"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Clinical Efficacy
+                </Link>
+              </li>
+              <li className="list-unstyled">
+                <Link
+                  activeClass="active"
+                  to="section5"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Order
+                </Link>
+              </li>
+              <li className="list-unstyled">
+                <Link
+                  activeClass="active"
+                  to="section6"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="list-unstyled">
+                <Link
+                  activeClass="active"
+                  to="section7"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  FAQ
+                </Link>
               </li>
             </ul>
           </MDBCol>
@@ -34,7 +108,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; <a href="http://xdgtechnologies.com/"> XDG Technologies </a>
         </MDBContainer>
       </div>
     </MDBFooter>

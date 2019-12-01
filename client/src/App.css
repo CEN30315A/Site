@@ -141,3 +141,11 @@ li.nav-item > a.active {
   color: #F6D058;
 }
 
+.list-unstyled {
+  color: white !important;
+}
+
+.list-unstyled:hover {
+  color: #F6D058 !important;
+  cursor: pointer !important;
+}
