@@ -1,6 +1,6 @@
-const Example = require('../models/examples.server.model');
-const EmailCred = require('../config/email-credentials');
-const nodemailer = require('nodemailer');
+const EmailCred = require('../config/email-credentials'),
+      nodemailer = require('nodemailer'),
+      path = require('path');
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -10,12 +10,7 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-exports.hello = function (req, res) {
-  res.send('world');
-};
-
 exports.email = async function (req, res) {
-
 
   let mailOptions = {
     from: EmailCred.email,
@@ -41,4 +36,9 @@ exports.email = async function (req, res) {
       res.send(info);
     }
   });
+}
+
+exports.campaign = function (req, res) {
+  console.log(req.path.substring(3));
+  res.redirect('/');
 }

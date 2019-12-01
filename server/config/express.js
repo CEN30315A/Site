@@ -29,7 +29,6 @@ module.exports.init = () => {
     // add a router
     app.use('/', router);
 
-    if (process.env.NODE_ENV === 'production') {
         // Serve any static files
         app.use(express.static(path.join(__dirname, '../../client/build')));
 
@@ -37,7 +36,6 @@ module.exports.init = () => {
         app.get('*', function(req, res) {
             res.sendFile(path.join(__dirname, '../../client/build', 'index.html'));
         });
-    }
 
     return app
 }

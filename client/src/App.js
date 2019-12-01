@@ -10,6 +10,7 @@ import ProductImages from './components/ProductImages';
 import ClinicalEfficacy from './components/ClinicalEfficacy';
 import Order from './components/Order';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 import Data from './data/data';
 import Landing from './components/Landing';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -64,13 +65,16 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        
         <Product
           title="Digi-Clamp"
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        <ProductImages />
+        <ProductImages 
+          title="Procedures"
+          //dark={index++ % 2 === 0}
+          //id={"section" + index}
+        />
         <ClinicalEfficacy
           title="Clinical Efficacy"
           dark={index++ % 2 === 0}
@@ -86,7 +90,7 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
-        
+
         <FaqSection  
           questAns={Data.faq}
         title="FAQ"
@@ -100,7 +104,7 @@ function App() {
          <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
-        <br/>
+        <Footer />
       </div>
       </Router>
       </Provider>
