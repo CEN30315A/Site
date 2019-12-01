@@ -58,47 +58,48 @@ const Routes = () => (
 */
 
 function App() {
-  let index = 0
+  
 
   const About = () => (
   <div className='about'>
     <AboutUs
           title="About Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
+          id={"aboutus"}
         />
   </div>
   );
-
+  let index = 0
   const Base = () => (
   <div className='baser'>
     <Home
         title="Home"
-        dark={index++ % 2 === 0}
-        id={"section" + index}
+        dark={0}
+        id={"section1"}
         data={Data}
     />
+    <div id="section2">
     <Product
           title="Digi-Clamp"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
+          dark={1}
+          id={"section8"}
         />
+    </div>
     <Order
         title="Order"
-        dark={index++ % 2 === 0}
-        id={"section" + index}
+        dark={0}
+        id={"section3"}
     />
     <ContactUs
       title="Contact Us"
-      dark={index++ % 2 === 0}
-      id={"section" + index}
+      dark={1}
+      id={"section4"}
     />
 
     <FaqSection  
       questAns={Data.faq}
     title="FAQ"
-    dark={index++ % 2 === 0}
-    id={"section" + index}
+    dark={0}
+    id={"section5"}
     />
   </div>
   );
@@ -107,8 +108,7 @@ function App() {
     <div className='procedures'>
       <ProductImages 
             title="Procedures"
-            //dark={index++ % 2 === 0}
-            //id={"section" + index}
+            //id={"proc"}
           />
     </div>
   );
@@ -117,8 +117,7 @@ function App() {
     <div className='efficacy'>
       <ClinicalEfficacy
             title="Clinical Efficacy"
-            dark={index++ % 2 === 0}
-            id={"section" + index}
+            id={"eff"}
           />
     </div>
   );

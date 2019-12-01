@@ -22,7 +22,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <NavLink
                 activeClass="active"
-                to="section1"
+                to="/"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -46,7 +46,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section3"
+                to="/#section2"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -56,33 +56,45 @@ export default class Navbar extends Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 activeClass="active"
-                to="section4"
+                to="/efficacy"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Clinical Efficacy
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 activeClass="active"
-                to="section5"
+                to="/procedures"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Procedures
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                activeClass="active"
+                to="/#section3"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Order
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section6"
+                to="/#section4"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -94,7 +106,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section7"
+                to="/#section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
