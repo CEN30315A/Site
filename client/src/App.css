@@ -178,3 +178,8 @@ li.nav-item > a.active {
   outline-width: thick;
   outline-offset: -15px;
 }
+
+.carousel-caption h3 {
+    color: #1E90FF;
+}
+
