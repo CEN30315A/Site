@@ -24,6 +24,7 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
 import AdminPage from './components/AdminPage';
+import EmailForm from './components/EmailForm';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -88,6 +89,11 @@ function App() {
         />
         <ContactUs
           title="Contact Us"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
+        />
+        <EmailForm
+          title="Email Us"
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
