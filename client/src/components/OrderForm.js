@@ -19,7 +19,7 @@ function OrderForm() {
                 </button>
 
             <ReactBootstrap.Modal show={show} onHide={handleShow}>
-                <ReactBootstrap.Form action="/api/orders/submit_order" method="post">
+                <ReactBootstrap.Form action="/api/orders/submit_order" method="post" target="_self">
                     <ReactBootstrap.Modal.Header closeButton>
                         <ReactBootstrap.Modal.Title>
                             Order Form
