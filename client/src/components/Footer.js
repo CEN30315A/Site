@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
