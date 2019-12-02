@@ -7,5 +7,8 @@ router.route('/email/')
 
 router.route('/c/*')
   .get(controller.campaign);
+
+  router.route('/retrieve_orders')
+  .get(controller.retrieve_orders);
   
 module.exports = router;
