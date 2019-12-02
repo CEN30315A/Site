@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
+const axios = require("axios");
 
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
@@ -46,6 +47,20 @@ router.post("/register", (req, res) => {
             .catch(err => console.log(err));
         });
       });
+
+      const date = new Date();
+      const day = (date.getDate() < 10 ? '0' : '') + date.getDate();
+      const month = ((date.getMonth() + 1) < 10 ?  '0' : '') + (date.getMonth() + 1); //January is 0!
+      const year = date.getFullYear();
+      var today = month + '/' + day + '/' + year;
+      axios.post('/email', {
+        "recipients": [newUser.email],
+        "subject": "XDG Site User Created",
+        "html": "<h1>Account Created for XDG Site</h1> <p>An account with the email " + newUser.email + " on " + today + " at " + date.getHours() + ":" + date.getMinutes() + ".</p>"
+      })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
   });
 });

@@ -1,6 +1,6 @@
 const EmailCred = require('../config/email-credentials'),
-      nodemailer = require('nodemailer'),
-      path = require('path');
+  nodemailer = require('nodemailer'),
+  Visit = require("../models/Visit");
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -28,7 +28,7 @@ exports.email = async function (req, res) {
   req.body.recipients.map(recipient => {
     mailOptions.to += recipient + ", ";
   });
-  
+
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       res.send(error);
@@ -39,6 +39,9 @@ exports.email = async function (req, res) {
 }
 
 exports.campaign = function (req, res) {
-  console.log(req.path.substring(3));
+  new Visit({
+    key: req.path.substring(3),
+  })
+    .save();
   res.redirect('/');
 }
