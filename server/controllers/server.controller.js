@@ -45,3 +45,17 @@ exports.campaign = function (req, res) {
     .save();
   res.redirect('/');
 }
+
+exports.retrieve_orders = function (req, res) {
+
+    console.log('get orders');
+    // console.log(Array.from(Order.find({})));
+    //let results= []
+  
+    Order.find({}).then(eachOne =>{
+      res.send(eachOne);
+  
+    })
+    //.then(()=>res.send(results))
+    // res.send('test');
+}

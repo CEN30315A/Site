@@ -47,4 +47,16 @@ const Order = require("../../models/Orders");
     //console.log(req.body)
 
 })
+
+// router.post('/retrieve_orders', function(req, res){
+//   console.log('get orders');
+//   // console.log(Array.from(Order.find({})));
+//   let results= []
+
+//   // Order.find({}).then(eachOne =>{
+//   //   results.add(eachOne);
+
+//   // }).then(()=>res.send(results))
+//   res.send('test');
+// });
 module.exports= router;
