@@ -44,16 +44,16 @@ export default class Navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="/home#section2"
+                href="/#section2"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Digi-Clamp
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <NavLink
