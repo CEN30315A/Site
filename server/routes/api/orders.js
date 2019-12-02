@@ -5,6 +5,8 @@ const passport = require("passport");
 
 const Order = require("../../models/Orders");
 
+//not necessary anymore
+
 // const newOrder = new Order({
 //     firstname: req.body.firstname,
 //     lastname: req.body.lastname,
@@ -18,22 +20,15 @@ const Order = require("../../models/Orders");
 //   });
 
   router.post('/submit_order', function(req,res){ 
-      var quantity= req.body.quantity;
-    var firstname= req.body.firstname;
-    var lastname= req.body.lastname;
-    var email= req.body.email;
-    var phonenumber= req.body.phonenumber;
-    var address1= req.body.address1;
-    var address2= req.body.address2;
-    var city= req.body.city;
-    var stateUS= req.body.stateUS;
-    var zipcode= req.body.zipcode ;
-  
+ 
 
     let order= new Order(req.body)
     order.save()
-    console.log(order)
-    console.log(req.body)
+    res.redirect('/');
+
+    //for testing the posts
+    //console.log(order)
+    //console.log(req.body)
 
 })
 module.exports= router;

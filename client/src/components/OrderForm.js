@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
+import { Redirect } from 'react-router'
+
 
 function OrderForm() {
 	const [show, setShow] = useState(false);
@@ -7,6 +9,11 @@ function OrderForm() {
 	const handleShow = () => {
 		setShow(!show);
     }
+
+    // const handleOnSubmit= () => {
+    //     <Redirect to = '/' />
+    // }
+
 
 		return (
             <div>
@@ -17,7 +24,7 @@ function OrderForm() {
                 </button>
 
                 <ReactBootstrap.Modal show={show} onHide={handleShow}>
-                    <ReactBootstrap.Form action="/api/orders/submit_order" method="post">
+                    <ReactBootstrap.Form action="/api/orders/submit_order" method="post" target="_self">
                         <ReactBootstrap.Modal.Header closeButton>
                             <ReactBootstrap.Modal.Title>
                                 Order Form
@@ -135,7 +142,7 @@ function OrderForm() {
                             </ReactBootstrap.Modal.Body>
 
                             <ReactBootstrap.Modal.Footer>
-                                <button class="btn btn-outline-primary" onClick={handleShow}>
+                                <button class="btn btn-outline-primary" type= "button" onClick={handleShow}>
                                     Cancel
                                 </button>
 
