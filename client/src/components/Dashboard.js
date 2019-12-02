@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from ".././actions/authActions";
+import OrderForm from './OrderForm';
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -18,12 +19,14 @@ class Dashboard extends Component {
           <div className="landing-copy col s12 center-align">
           <br/>
             <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
+              <b>Hi</b> {user.name.split(" ")[0]}!
+              
             </h4>
+            <br/><br/>
+            <h5>Order below</h5>
+            <br/>
+           <OrderForm/>
+           <br/>
             <button
               style={{
                 width: "150px",
@@ -32,7 +35,7 @@ class Dashboard extends Component {
                 marginTop: "1rem"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn btn-primary"
             >
               Logout
             </button>

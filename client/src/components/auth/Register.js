@@ -49,9 +49,8 @@ return (
           <div className="col s8 offset-s2">
           <br/>
             <Link to="/" className="btn-flat waves-effect">
-            
-              <a className="btn btn-primary">Back to
-              home</a> 
+
+              <a className="btn btn-primary">Back</a> 
             </Link>
             <br/>
             <br/>
@@ -75,7 +74,7 @@ return (
                     invalid: errors.name
                   })}
                 />
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">&nbsp;&nbsp;Name</label>
                 <span className="red-text">{errors.name}</span>
               </div>
               <div className="input-field col s12">
@@ -89,7 +88,7 @@ return (
                     invalid: errors.email
                   })}
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">&nbsp;&nbsp;Email</label>
                 <span className="red-text">{errors.email}</span>
               </div>
               <div className="input-field col s12">
@@ -103,7 +102,7 @@ return (
                     invalid: errors.password
                   })}
                 />
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">&nbsp;&nbsp;Password</label>
                 <span className="red-text">{errors.password}</span>
               </div>
               <div className="input-field col s12">
@@ -117,7 +116,7 @@ return (
                     invalid: errors.password2
                   })}
                 />
-                <label htmlFor="password2">Confirm Password</label>
+                <label htmlFor="password2">&nbsp;&nbsp;Confirm Password</label>
                 <span className="red-text">{errors.password2}</span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
