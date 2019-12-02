@@ -126,19 +126,28 @@ li.nav-item > a.active {
 
 .faq .btn {
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
+
+  
 }
 .faq {
-  width: 85%;
+  width: 100%;
   margin-bottom: 30px;
   padding-left: 20%;
   color: black;
 }
+.faq .answer{
+  width: 100%;
+  color: #F6D058;
+  font-size: 20px;
+}
+
 
 .answer {
   background-color: #245478;
   color: #F6D058;
+  font: 20;
 }
 
 .list-unstyled {
