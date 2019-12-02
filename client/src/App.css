@@ -149,3 +149,23 @@ li.nav-item > a.active {
   color: #F6D058 !important;
   cursor: pointer !important;
 }
+
+.btn-primary{
+  background-color: #245478  !important;
+  border-color: #245478  !important;
+  color: #F6D058 !important;
+}
+
+
+
+.btn-primary:hover {
+  border-color: #F6D058 !important;
+  background-color: #F6D058 !important;
+  color: #245478 !important;
+}
+
+.valign-wrapper{
+  outline-style: solid;
+  outline-width: thick;
+  outline-offset: -15px;
+}

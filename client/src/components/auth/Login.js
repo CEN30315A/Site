@@ -47,9 +47,12 @@ return (
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons left"></i> Back to
-              home
+            
+              <a className="btn btn-primary">Back to
+              home</a> 
             </Link>
+            <br/>
+            <br/>
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
                 <b>Login</b> below
@@ -102,12 +105,14 @@ return (
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  className="btn btn-primary"
                 >
                   Login
                 </button>
               </div>
             </form>
+            <br/>
+            <br/>
           </div>
         </div>
       </div>
