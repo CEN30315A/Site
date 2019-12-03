@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 class EmailForm extends React.Component {
   constructor() {
     super();
@@ -11,26 +12,33 @@ class EmailForm extends React.Component {
     event.preventDefault();
     const data = new FormData(event.target);
     
-    fetch('/email', {
+    fetch('/email/', {
       method: 'POST',
       body: data,
+      
     });
+    console.log(data);
   }
+  
 
   render() {
-    return (
+    return (        
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="username">Enter username</label>
-        <input id="username" name="username" type="text" />
 
-        <label htmlFor="email">Enter your email</label>
+    
+        <tr/>
+        <label htmlFor="email" style = {{paddingRight : 10}} >Enter your email  </label>
         <input id="email" name="email" type="email" />
-
-        <label htmlFor="birthdate">Enter your birth date</label>
-        <input id="birthdate" name="birthdate" type="text" />
-
-        <button>Send data!</button>
-      </form>
+        <p>
+          <label>Message: </label>
+          <textarea id = "myTextArea"
+                  rows = "3"
+                  cols = "80"
+                  placeholder = "Your text here"></textarea>
+        </p>
+        <button> Send data! </button>
+     
+      </form>  
     );
   }
 }

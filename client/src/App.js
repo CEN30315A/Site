@@ -82,6 +82,7 @@ function App() {
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
+        
         <Order
           title="Order"
           dark={index++ % 2 === 0}
@@ -89,11 +90,6 @@ function App() {
         />
         <ContactUs
           title="Contact Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <EmailForm
-          title="Email Us"
           dark={index++ % 2 === 0}
           id={"section" + index}
         />

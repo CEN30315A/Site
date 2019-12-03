@@ -1,4 +1,5 @@
 import React from "react";
+import EmailForm from "./EmailForm";
 
 export default function ContactUs({ title, dark, id }) {
   return (
@@ -14,6 +15,8 @@ export default function ContactUs({ title, dark, id }) {
 			Phone: (352) 812-1175
 
 </p>
+
+<EmailForm></EmailForm>
       </div>
     </div>
   );
