@@ -63,6 +63,18 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
+                Procedures
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section5"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Clinical Efficacy
               </Link>
             </li>
@@ -81,7 +93,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section5"
+                to="section6"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -93,7 +105,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section6"
+                to="section7"
                 spy={true}
                 smooth={true}
                 offset={-70}

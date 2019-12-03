@@ -12,7 +12,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-         <Carousel fade="true" indicators="false" controls="false">
+         <Carousel fade="true" indicators="" controls="">
           <Carousel.Item>
             <img
               className="d-block w-100"

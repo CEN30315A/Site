@@ -37,7 +37,7 @@ class EmailForm extends React.Component {
                   cols = "80"
                   placeholder = "Your text here"></textarea>
         </p>
-        <button> Send data! </button>
+        <button class="btn btn-outline-primary"> Send data! </button>
      
       </form>  
     );
