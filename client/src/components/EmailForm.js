@@ -1,6 +1,5 @@
 import React from "react";
-
-
+const axios = require("axios");
 
 class EmailForm extends React.Component {
   constructor() {
@@ -10,14 +9,16 @@ class EmailForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const data = new FormData(event.target);
+    const data = {
+      "recipients": ["nicholas.signori@gmail.com"],
+      "subject": document.querySelector("#email").value + " emailed you",
+      "text": document.querySelector("#myTextArea").value 
+    };
     
-    fetch('/email/', {
-      method: 'POST',
-      body: data,
-      
-    });
-    console.log(data);
+    axios.post('/email', data)
+      .catch(function (error) {
+        console.log(error);
+      });
   }
   
 
