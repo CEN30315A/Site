@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import FaqSection from './components/FaqSection';
-import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
 import Header from "./components/Header";
 import AboutUs from './components/AboutUs';
 import Home from './components/Home';
@@ -110,7 +110,7 @@ function App() {
     <div className="App">
 
         <Header/>
-        <Navbar />
+        <Navbar2 />
 
 
          

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../xdg_header_mod.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { NavDropdown, Nav } from 'react-bootstrap'
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -9,7 +10,8 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="nav" id="navbar">
+  <Navbar bg="light" expand="lg">
+      <Nav>
         <div className="nav-content">
           <img
             src={logo}
@@ -17,7 +19,9 @@ export default class Navbar extends Component {
             alt="Logo"
             onClick={this.scrollToTop}
           />
+          
           <ul className="nav-items">
+          
             <li className="nav-item">
               <a
                 activeClass="active"
@@ -31,16 +35,10 @@ export default class Navbar extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a
-                activeClass="active"
-                href="/about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                About Us
-              </a>
+            <NavDropdown title="About Us" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/about">Our Team</NavDropdown.Item>
+              <NavDropdown.Item href="/about">Our Story</NavDropdown.Item>
+            </NavDropdown>
             </li>
             <li className="nav-item">
               <a
@@ -114,6 +112,7 @@ export default class Navbar extends Component {
                 FAQ
               </a>
             </li>
+
             <li className="nav-item">
               <a
                 activeClass="active"
@@ -126,9 +125,13 @@ export default class Navbar extends Component {
                 Login
               </a>
             </li>
+            
           </ul>
+         
         </div>
-      </nav>
+      
+       </Nav>
+    </Navbar>
     );
   }
 }
