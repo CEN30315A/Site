@@ -1,3 +1,10 @@
+const dotenv = require('dotenv');
+console.log('Your port is' + process.env.SECRETKEY);
+result = dotenv.config();
+console.log('config' + result);
+console.log('Your port is' + process.env.SECRETKEY);
+
+
 const express = require("./config/express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -6,6 +13,7 @@ const users = require("./routes/api/users");
 const app = express.init();
 
 const orders = require("./routes/api/orders");
+
 
 // Bodyparser middleware
 app.use(
