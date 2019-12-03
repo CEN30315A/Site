@@ -48,6 +48,54 @@ if (localStorage.jwtToken) {
 
 function App() {
   let index = 0
+
+  const About = () => (
+    <AboutUs
+          title="About Us"
+          id={"aboutus"}
+        />
+  
+  ); 
+
+  const Base = () => (
+  <div className='baser'>
+  <Home
+    title="Home"
+    dark={index++ % 2 === 0}
+    id={"section1"}
+    data={Data}
+  />
+  <Product
+    title="Digi-Clamp"
+    dark={index++ % 2 === 0}
+    id={"section2"}
+  />
+  <ProductImages 
+    title="Procedures"
+    dark={index++ % 2 === 0}
+    id={"section3"}
+  />
+  <ClinicalEfficacy
+    title="Clinical Efficacy"
+    dark={index++ % 2 === 0}
+    id={"section4"}
+  />
+  <ContactUs
+    title="Contact Us"
+    dark={index++ % 2 === 0}
+    id={"section5"}
+  />
+
+  <FaqSection  
+    questAns={Data.faq}
+  title="FAQ"
+  dark={index++ % 2 === 0}
+  id={"section6"}
+  />
+  </div>
+  );
+
+
   return (
     <Provider store={store}>
     <Router>
@@ -55,44 +103,8 @@ function App() {
 
         <Header/>
         <Navbar />
-        <Home
-          title="Home"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-          data={Data}
-        />
-        <AboutUs
-          title="About Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <Product
-          title="Digi-Clamp"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <ProductImages 
-          title="Procedures"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <ClinicalEfficacy
-          title="Clinical Efficacy"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <ContactUs
-          title="Contact Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
 
-        <FaqSection  
-          questAns={Data.faq}
-        title="FAQ"
-        dark={index++ % 2 === 0}
-        id={"section" + index}
-        />
+
          
         <LoginSection
         title="Login"
@@ -100,9 +112,11 @@ function App() {
         id={"section8"}
         />
 
-        <Route exact path="/" component={Landing}  />
+        <Route exact path="/" component={Base}  />
+        <Route exact path="/home" component={Base} />
         <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/about" component={About} />
          <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>

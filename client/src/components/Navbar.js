@@ -19,112 +19,112 @@ export default class Navbar extends Component {
           />
           <ul className="nav-items">
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section1"
+                href="#section1"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section2"
+                href="/about"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 About Us
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section3"
+                href="/home#section2"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Digi-Clamp
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section4"
+                href="/home#section3"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Procedures
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section5"
+                href="/home#section4"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Clinical Efficacy
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section8"
+                href="/home#section8"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Order
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section6"
+                href="/home#section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section7"
+                href="/home#section6"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 FAQ
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link
+              <a
                 activeClass="active"
-                to="section8"
+                href="/login"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 Login
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
