@@ -1,19 +1,19 @@
-const EmailCred = require('../config/email-credentials'),
-  nodemailer = require('nodemailer'),
-  Visit = require("../models/Visit");
+
+const nodemailer = require('nodemailer');
+const Visit = require("../models/Visit");
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: EmailCred.email,
-    pass: EmailCred.password
+    user: process.env.EMAIL_CRED_EMAIL,
+    pass: process.env.EMAIL_PASSWORD
   }
 });
 
 exports.email = async function (req, res) {
 
   let mailOptions = {
-    from: EmailCred.email,
+    from: process.env.EMAIL_CRED_EMAIL,
     subject: req.body.subject
   };
 

@@ -1,5 +1,11 @@
+#!server/config/keys.js
+!keys.js
 config.js
-server/config/
+passport.js
+email-credentials.js
+express.js
+#server/config/
+!*/*/keys.js
 client/build/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
@@ -21,8 +27,9 @@ client/node_modules
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-keys.js
+# keys.js

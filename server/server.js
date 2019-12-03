@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+// UNCOMMENT BELOW IN DEV
+/*
+const dotenv = require('dotenv');
+console.log('Your port is' + process.env.SECRETKEY);
+result = dotenv.config();
+console.log('config' + result);
+console.log('Your port is' + process.env.SECRETKEY);
+*/
+=======
+//const dotenv = require('dotenv');
+//console.log('Your port is' + process.env.SECRETKEY);
+//result = dotenv.config();
+//console.log('config' + result);
+//console.log('Your port is' + process.env.SECRETKEY);
+
+>>>>>>> 10d6dea3ce844ca1ad52a5e0641c4913cdb8acff
+
 const express = require("./config/express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -6,6 +24,7 @@ const users = require("./routes/api/users");
 const app = express.init();
 
 const orders = require("./routes/api/orders");
+
 
 // Bodyparser middleware
 app.use(
