@@ -9,18 +9,16 @@ const axios = require("axios");
 
 class Dashboard extends Component {
   state = {
-    rows: []
+    orders: [],
+    visits: []
 };
 
 async componentDidMount(){
   const response = await axios.get('/retrieve_orders')
-
   let data = response['data']
-
-  let newRows = []
-
+  let rows = []
   data.map(transaction=>{
-      newRows.push(
+      rows.push(
           <tr>
               <td>Token</td>
               <td>{transaction['email']} </td>
@@ -37,10 +35,21 @@ async componentDidMount(){
           </tr>
       );
   });
-
-  this.setState({rows: newRows});
+  this.setState({orders: rows});
           
-          
+  const response2 = await axios.get('/retrieve_visits')
+  data = response2['data']
+  rows = []
+  data.map(visit=>{
+    let date = new Date(visit.date);
+      rows.push(
+          <tr>
+              <td>{(date.getMonth()+1) + "/" + date.getDate() + "/" + date.getFullYear()}</td>
+              <td>{visit.key} </td>
+          </tr>
+      );
+  });
+  this.setState({visits: rows});
 }
   onLogoutClick = e => {
     e.preventDefault();
@@ -107,7 +116,18 @@ const adminPage =
           </tr>
       </thead>
       <tbody>
-          {this.state.rows}
+          {this.state.orders}
+      </tbody>
+  </Table>
+  <Table striped bordered hover>
+      <thead>
+          <tr>
+          <th>Date</th>
+          <th>Campaign</th>
+          </tr>
+      </thead>
+      <tbody>
+          {this.state.visits}
       </tbody>
   </Table>
   <button
