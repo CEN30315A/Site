@@ -1,8 +1,8 @@
-const dotenv = require('dotenv');
-console.log('Your port is' + process.env.SECRETKEY);
-result = dotenv.config();
-console.log('config' + result);
-console.log('Your port is' + process.env.SECRETKEY);
+//const dotenv = require('dotenv');
+//console.log('Your port is' + process.env.SECRETKEY);
+//result = dotenv.config();
+//console.log('config' + result);
+//console.log('Your port is' + process.env.SECRETKEY);
 
 
 const express = require("./config/express");
