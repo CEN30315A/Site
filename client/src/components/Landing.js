@@ -9,7 +9,7 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h2>
-              Login
+              Login to Order Now
             </h2>
             
             <br />
