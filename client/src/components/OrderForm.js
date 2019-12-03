@@ -142,7 +142,7 @@ function OrderForm() {
                                 </button>
 
                         {/* <input class="btn btn-outline-primary" type="submit" id="submitDetails" name="submitDetails" value="Submit" /> */}
-                        <button class="btn btn-outline-primary" type="Submit">
+                        <button class="btn btn-outline-primary" type="Submit" onClick={() => alert("Thank you for ordering clamps. A confirmation email has been sent to " + document.querySelector("#email").value +".")}>
                             Checkout
                                 </button>
                     </ReactBootstrap.Modal.Footer>

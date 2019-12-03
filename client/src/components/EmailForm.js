@@ -11,7 +11,7 @@ class EmailForm extends React.Component {
     event.preventDefault();
     const data = {
       "recipients": ["OWNER"],
-      "subject": document.querySelector("#email").value + " emailed you",
+      "subject": document.querySelector("#formEmail").value + " emailed you",
       "text": document.querySelector("#myTextArea").value 
     };
     
@@ -19,17 +19,19 @@ class EmailForm extends React.Component {
       .catch(function (error) {
         console.log(error);
       });
+
+      document.getElementById("EmailForm").reset();
   }
   
 
   render() {
     return (        
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} id="EmailForm">
 
     
         <tr/>
         <label htmlFor="email" style = {{paddingRight : 10}} >Enter your email  </label>
-        <input id="email" name="email" type="email" />
+        <input id="formEmail" name="email" type="email" />
         <p>
           <label>Message: </label>
           <textarea id = "myTextArea"
@@ -37,7 +39,9 @@ class EmailForm extends React.Component {
                   cols = "80"
                   placeholder = "Your text here"></textarea>
         </p>
-        <button class="btn btn-outline-primary"> Send data! </button>
+        <button class="btn btn-outline-primary" onClick={() => alert("Your email has has been sent. Thank you for contacting us.")}>
+          Send data! 
+        </button>
      
       </form>  
     );
