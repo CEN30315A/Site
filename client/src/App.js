@@ -57,6 +57,24 @@ function App() {
   
   ); 
 
+  const Procedure = () => (
+    <div className='procedures'>
+      <ProductImages 
+            title="Procedures"
+            //id={"proc"}
+          />
+    </div>
+  );
+
+  const Efficacy = () => (
+    <div className='efficacy'>
+      <ClinicalEfficacy
+            title="Clinical Efficacy"
+            id={"eff"}
+          />
+    </div>
+  );
+
   const Base = () => (
   <div className='baser'>
   <Home
@@ -70,27 +88,17 @@ function App() {
     dark={index++ % 2 === 0}
     id={"section2"}
   />
-  <ProductImages 
-    title="Procedures"
-    dark={index++ % 2 === 0}
-    id={"section3"}
-  />
-  <ClinicalEfficacy
-    title="Clinical Efficacy"
-    dark={index++ % 2 === 0}
-    id={"section4"}
-  />
   <ContactUs
     title="Contact Us"
     dark={index++ % 2 === 0}
-    id={"section5"}
+    id={"section3"}
   />
 
   <FaqSection  
     questAns={Data.faq}
   title="FAQ"
   dark={index++ % 2 === 0}
-  id={"section6"}
+  id={"section4"}
   />
   </div>
   );
@@ -115,6 +123,8 @@ function App() {
         <Route exact path="/" component={Base}  />
         <Route exact path="/home" component={Base} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/procedures" component={Procedure}/>
+        <Route exact path="/efficacy" component={Efficacy}/>
         <Route exact path="/login" component={Login} />
         <Route exact path="/about" component={About} />
          <Switch>
