@@ -10,7 +10,7 @@ class EmailForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const data = {
-      "recipients": ["nicholas.signori@gmail.com"],
+      "recipients": ["OWNER"],
       "subject": document.querySelector("#email").value + " emailed you",
       "text": document.querySelector("#myTextArea").value 
     };

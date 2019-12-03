@@ -1,4 +1,3 @@
-
 const nodemailer = require('nodemailer');
 const Visit = require("../models/Visit");
 
@@ -26,7 +25,11 @@ exports.email = async function (req, res) {
 
   mailOptions.to = "";
   req.body.recipients.map(recipient => {
-    mailOptions.to += recipient + ", ";
+    if(recipient === "OWNER") {
+      mailOptions.to += process.env.OWNER_EMAIL;
+    } else {
+      mailOptions.to += recipient + ", ";
+    }
   });
 
   transporter.sendMail(mailOptions, function (error, info) {
