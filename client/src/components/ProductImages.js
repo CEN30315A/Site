@@ -97,6 +97,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src= {skin_tag_before}
                           onClick={handleShow1}
                           alt="First slide"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show1} onHide={handleShow1} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -109,6 +110,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src= {skin_tag_before}
                               alt="First slide"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -124,6 +126,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={skin_tag_during1}
                           onClick={handleShow2}
                           alt="Second slide"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show2} onHide={handleShow2} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -136,6 +139,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={skin_tag_during1}
                               alt="Second slide"
+                              height={550}
                             />
                          </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -151,6 +155,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={skin_tag_during2}
                           onClick={handleShow3}
                           alt="Third slide"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show3} onHide={handleShow3} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -163,6 +168,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={skin_tag_during2}
                               alt="Third slide"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -178,6 +184,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={skin_tag_during3}
                           onClick={handleShow4}
                           alt="Fourth slide"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show4} onHide={handleShow4} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -190,6 +197,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={skin_tag_during3}
                               alt="Fourth slide"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -205,6 +213,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={skin_tag_followup}
                           onClick={handleShow5}
                           alt="Fifth slide"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show5} onHide={handleShow5} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -217,6 +226,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={skin_tag_followup}
                               alt="Fifth slide"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -235,6 +245,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src= {prea_before}
                           onClick={handleShow10}
                           alt="First slide2"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show10} onHide={handleShow10} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -247,6 +258,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src= {prea_before}
                               alt="First slide2"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -262,6 +274,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={prea_during_1}
                           onClick={handleShow11}
                           alt="Second slide2"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show11} onHide={handleShow11} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -274,6 +287,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src= {prea_during_1}
                               alt="Second slide2"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -289,6 +303,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={prea_during_2}
                           onClick={handleShow12}
                           alt="Third slide2"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show12} onHide={handleShow12} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -301,6 +316,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src= {prea_during_2}
                               alt="Third slide2"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -316,6 +332,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={prea_after}
                           onClick={handleShow13}
                           alt="Fourth slide2"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show13} onHide={handleShow13} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -329,6 +346,7 @@ export default function ProductImages ({ title, dark, id }) {
                               src= {prea_after}
                               onClick={handleShow10}
                               alt="Fourth slide2"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -347,6 +365,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src= {poly_before}
                           onClick={handleShow6}
                           alt="First slide3"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show6} onHide={handleShow6} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -359,6 +378,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src= {poly_before}
                               alt="First slide3"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -374,6 +394,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={poly_during_1}
                           onClick={handleShow7}
                           alt="Second slide3"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show7} onHide={handleShow7} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -386,6 +407,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={poly_during_1}
                               alt="Second slide3"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -401,6 +423,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={poly_during_2}
                           onClick={handleShow8}
                           alt="Third slide3"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show8} onHide={handleShow8} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -413,6 +436,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={poly_during_2}
                               alt="Third slide3"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>
@@ -428,6 +452,7 @@ export default function ProductImages ({ title, dark, id }) {
                           src={poly_after}
                           onClick={handleShow9}
                           alt="Fourth slide3"
+                          height={550}
                         />
                         <ReactBootstrap.Modal show={show9} onHide={handleShow9} size="lg">
                           <ReactBootstrap.Modal.Header closeButton>
@@ -440,6 +465,7 @@ export default function ProductImages ({ title, dark, id }) {
                               className="d-block w-100"
                               src={poly_after}
                               alt="Fourth slide3"
+                              height={550}
                             />
                           </ReactBootstrap.Modal.Body>
                           <ReactBootstrap.Modal.Footer>

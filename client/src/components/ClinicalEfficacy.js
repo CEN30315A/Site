@@ -16,8 +16,6 @@ export default function ClinicalEfficacy({ title, dark, id }) {
             <Card.Body>
               <Card.Title>Skin Tags</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk
-                of the card's content.
               </Card.Text>
               <Card.Link href="https://drive.google.com/file/d/14-1DtiGnqudbjF_5XakhE3Q9kLSXFL11/view?usp=sharing">Link to Skin Tag White Paper</Card.Link>
             </Card.Body>
@@ -27,8 +25,6 @@ export default function ClinicalEfficacy({ title, dark, id }) {
             <Card.Body>
               <Card.Title>Preauricular Tags</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
                 </Card.Text>
                 <Card.Link href="https://drive.google.com/file/d/1f7lvdy9OvBskxCT2obcMNIQMJSZW5r5D/view?usp=sharing">Link to Digi-Clamp Summary</Card.Link>
             </Card.Body>
@@ -38,8 +34,6 @@ export default function ClinicalEfficacy({ title, dark, id }) {
             <Card.Body>
               <Card.Title>Polydoctyly Tags</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk
-                of the card's content.
               </Card.Text>
               <Card.Link href="https://drive.google.com/file/d/1nrnTwWGSjvYoYQ_NwhfZUyjxQ859bpvI/view?usp=sharing">Link to Polydoctyly Tag Procecure</Card.Link>
             </Card.Body>
