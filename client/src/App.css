@@ -137,12 +137,12 @@ li.nav-item > a.active {
   margin-bottom: 30px;
   color: black;
 }
+
 .faq .answer{
   width: 100%;
   color: white;
   font-size: 20px;
 }
-
 
 .answer {
   background-color: #245478;
@@ -164,8 +164,6 @@ li.nav-item > a.active {
   border-color: #245478  !important;
   color: #F6D058 !important;
 }
-
-
 
 .btn-primary:hover {
   border-color: #F6D058 !important;

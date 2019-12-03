@@ -132,7 +132,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; <a href="http://xdgtechnologies.com/"> XDG Technologies </a>
+          &copy; <a href="http://xdgtechnologies.com/" style={{ color: '#F6D058' }}> XDG Technologies </a>
         </MDBContainer>
       </div>
     </MDBFooter>
