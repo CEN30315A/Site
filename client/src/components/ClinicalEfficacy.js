@@ -17,7 +17,7 @@ export default function ClinicalEfficacy({ title, dark, id }) {
               <Card.Title>Skin Tags</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Card.Link href="https://drive.google.com/file/d/14-1DtiGnqudbjF_5XakhE3Q9kLSXFL11/view?usp=sharing">Link to Skin Tag White Paper</Card.Link>
+              <a href="https://drive.google.com/file/d/14-1DtiGnqudbjF_5XakhE3Q9kLSXFL11/view?usp=sharing" style={{ color: '#F6D058' }}>Link to Skin Tag White Paper</a>
             </Card.Body>
           </Card>
           <Card className="card-color" style={{ width: '18rem' }}>
@@ -26,7 +26,7 @@ export default function ClinicalEfficacy({ title, dark, id }) {
               <Card.Title>Preauricular Tags</Card.Title>
                 <Card.Text>
                 </Card.Text>
-                <Card.Link href="https://drive.google.com/file/d/1f7lvdy9OvBskxCT2obcMNIQMJSZW5r5D/view?usp=sharing">Link to Digi-Clamp Summary</Card.Link>
+                <a href="https://drive.google.com/file/d/1f7lvdy9OvBskxCT2obcMNIQMJSZW5r5D/view?usp=sharing" style={{ color: '#F6D058' }}>Link to Digi-Clamp Summary</a>
             </Card.Body>
           </Card>
           <Card className="card-color" style={{ width: '18rem' }}>
@@ -35,7 +35,7 @@ export default function ClinicalEfficacy({ title, dark, id }) {
               <Card.Title>Polydoctyly Tags</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Card.Link href="https://drive.google.com/file/d/1nrnTwWGSjvYoYQ_NwhfZUyjxQ859bpvI/view?usp=sharing">Link to Polydoctyly Tag Procecure</Card.Link>
+              <a href="https://drive.google.com/file/d/1nrnTwWGSjvYoYQ_NwhfZUyjxQ859bpvI/view?usp=sharing" style={{ color: '#F6D058' }}>Link to Polydoctyly Tag Procecure</a>
             </Card.Body>
           </Card>
         </CardDeck>
