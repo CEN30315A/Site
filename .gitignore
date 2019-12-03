@@ -1,4 +1,5 @@
 !server/config/keys.js
+!keys.js
 config.js
 passport.js
 email-credentials.js
