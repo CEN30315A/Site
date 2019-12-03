@@ -23,7 +23,6 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
-import AdminPage from './components/AdminPage';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -103,7 +102,7 @@ function App() {
         <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
          <Switch>
-              <PrivateRoute exact path="/dashboard" component={AdminPage} />
+              <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
         <Footer />
       </div>
