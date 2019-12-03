@@ -5,7 +5,7 @@ function Faq(props) {
 
     return <div className="faq">
        
-        <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target={"#collapse" + questAn.id} aria-expanded="false" aria-controls={"collapse" + questAn.id}>
+        <button class="btn btn-outline-primary" type="button" align= "center" data-toggle="collapse" data-target={"#collapse" + questAn.id} aria-expanded="false" aria-controls={"collapse" + questAn.id}>
             {questAn.question}
         </button>
         <div className="collapse" id={"collapse" + questAn.id}>
