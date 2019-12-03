@@ -59,7 +59,7 @@ async componentDidMount(){
   render() {
     const { user } = this.props.auth;
     //check for admin
-    const admin = user.id === "5de5b062d795790c74e3d80d";
+    const admin = user.id === "5de5b062d795790c74e3d80d" || user.id === "5de5d9babf0568b643984d93";
 
     const regUser = 
 <div style={{ height: "75vh" }} className="container valign-wrapper">
