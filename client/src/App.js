@@ -23,6 +23,7 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
+import LoginSection from "./components/LoginSection";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -42,7 +43,6 @@ if (localStorage.jwtToken) {
     window.location.href = "./login";
   }
 }
-//import Footer from './components/Footer';
 
 
 function App() {
@@ -72,16 +72,9 @@ function App() {
         />
         <ProductImages 
           title="Procedures"
-          //dark={index++ % 2 === 0}
-          //id={"section" + index}
         />
         <ClinicalEfficacy
           title="Clinical Efficacy"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
-        <Order
-          title="Order"
           dark={index++ % 2 === 0}
           id={"section" + index}
         />
@@ -98,7 +91,13 @@ function App() {
         id={"section" + index}
         />
          
-        <Route exact path="/" component={Landing}/>
+        <LoginSection
+        title="Login"
+        dark={0}
+        id={"section8"}
+        />
+
+        <Route exact path="/" component={Landing}  />
         <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
          <Switch>

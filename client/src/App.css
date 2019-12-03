@@ -56,7 +56,7 @@
 }
 
 .nav .nav-content {
-  max-width: 900px;
+  max-width: 1000px;
   padding: 0rem 0rem;
   margin: 0 auto;
   display: flex;
@@ -182,4 +182,12 @@ li.nav-item > a.active {
 .carousel-caption h3 {
     color: #1E90FF;
 }
-
+.carousel-control-prev-icon {
+  display: none;
+}
+.carousel-control-next-icon {
+  display: none;
+}
+.carousel-indicators .active {
+  display:none
+}
