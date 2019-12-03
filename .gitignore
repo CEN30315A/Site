@@ -1,7 +1,10 @@
-!server/config/keys.js
+#!server/config/keys.js
 !keys.js
 config.js
-server/config/
+passport.js
+email-credentials.js
+express.js
+#server/config/
 !*/*/keys.js
 client/build/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
