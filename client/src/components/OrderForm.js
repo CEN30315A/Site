@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
-import { Redirect } from 'react-router'
-
 
 function OrderForm() {
     const [show, setShow] = useState(false);
