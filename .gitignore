@@ -1,4 +1,5 @@
 !server/config/keys.js
+!keys.js
 config.js
 server/config/
 !server/config/keys.js
