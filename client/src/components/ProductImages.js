@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as ReactBootstrap from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import logo from "../placeholder.png";
 import skin_tag_before from '../skin_tag_before.jpg';
 import skin_tag_during1 from '../skin_tag_during1.jpg';
 import skin_tag_during2 from '../skin_tag_during2.jpg';
