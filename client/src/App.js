@@ -23,6 +23,7 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
+import EmailForm from './components/EmailForm';
 import LoginSection from "./components/LoginSection";
 
 // Check for token to keep user logged in
