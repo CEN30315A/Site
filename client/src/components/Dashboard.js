@@ -99,7 +99,7 @@ async componentDidMount(){
 
 const adminPage = 
 <div>
-  <Table striped bordered hover>
+  <Table striped bordered hover size="sm">
       <thead>
           <tr>
           <th>Token (Transaction Number) </th>
