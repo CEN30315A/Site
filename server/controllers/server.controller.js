@@ -47,7 +47,17 @@ exports.campaign = function (req, res) {
 }
 
 exports.retrieve_orders = function (req, res) {
-    Order.find({}).then(eachOne =>{
-      res.send(eachOne);
-    })
+  Order.find({}).then(all => {
+    res.send(all);
+  })
+}
+
+exports.retrieve_visits = function (req, res) {
+  let date = new Date();
+  date.setDate(date.getDate() - 31);
+
+  let map = [];
+  Visit.find({ "date": { $gte: date } }).then(all => {
+    res.send(all);
+  })
 }
