@@ -47,16 +47,7 @@ exports.campaign = function (req, res) {
 }
 
 exports.retrieve_orders = function (req, res) {
-
-    console.log('get orders');
-    // console.log(Array.from(Order.find({})));
-    //let results= []
-
     Order.find({}).then(eachOne =>{
-      console.log(eachOne)
       res.send(eachOne);
     })
-
-    //.then(()=>res.send(results))
-    // res.send('test');
 }

@@ -182,4 +182,12 @@ li.nav-item > a.active {
 .carousel-caption h3 {
     color: #1E90FF;
 }
-
+.carousel-control-prev-icon {
+  display: none;
+}
+.carousel-control-next-icon {
+  display: none;
+}
+.carousel-indicators .active {
+  display:none
+}

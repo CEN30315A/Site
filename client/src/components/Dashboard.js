@@ -49,6 +49,7 @@ async componentDidMount(){
 
   render() {
     const { user } = this.props.auth;
+    //check for admin
     const admin = user.id === "5de5b062d795790c74e3d80d";
 
     const regUser = 
