@@ -63,13 +63,25 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                 >
-                  Clinical Efficacy
+                  Procedures
                 </Link>
               </li>
               <li className="list-unstyled">
                 <Link
                   activeClass="active"
                   to="section5"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Clinical Efficacy
+                </Link>
+              </li>
+              <li className="list-unstyled">
+                <Link
+                  activeClass="active"
+                  to="section8"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -100,6 +112,18 @@ const Footer = () => {
                   duration={500}
                 >
                   FAQ
+                </Link>
+              </li>
+              <li className="list-unstyled">
+                <Link
+                  activeClass="active"
+                  to="section8"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Login
                 </Link>
               </li>
             </ul>

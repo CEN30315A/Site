@@ -73,6 +73,8 @@ function App() {
         />
         <ProductImages 
           title="Procedures"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
         />
         <ClinicalEfficacy
           title="Clinical Efficacy"
