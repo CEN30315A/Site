@@ -102,6 +102,18 @@ export default class Navbar extends Component {
                 FAQ
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section8"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

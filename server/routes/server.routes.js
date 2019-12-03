@@ -10,5 +10,8 @@ router.route('/c/*')
 
   router.route('/retrieve_orders')
   .get(controller.retrieve_orders);
+
+  router.route('/retrieve_visits')
+  .get(controller.retrieve_visits);
   
 module.exports = router;

@@ -47,16 +47,17 @@ exports.campaign = function (req, res) {
 }
 
 exports.retrieve_orders = function (req, res) {
+  Order.find({}).then(all => {
+    res.send(all);
+  })
+}
 
-    console.log('get orders');
-    // console.log(Array.from(Order.find({})));
-    //let results= []
+exports.retrieve_visits = function (req, res) {
+  let date = new Date();
+  date.setDate(date.getDate() - 31);
 
-    Order.find({}).then(eachOne =>{
-      console.log(eachOne)
-      res.send(eachOne);
-    })
-
-    //.then(()=>res.send(results))
-    // res.send('test');
+  let map = [];
+  Visit.find({ "date": { $gte: date } }).then(all => {
+    res.send(all);
+  })
 }

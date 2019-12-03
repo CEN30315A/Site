@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 
-
 function OrderForm() {
     const [show, setShow] = useState(false);
 
