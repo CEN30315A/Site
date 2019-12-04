@@ -79,25 +79,25 @@ function App() {
   <div className='baser'>
   <Home
     title="Home"
-    dark={index++ % 2 === 0}
+    dark={1}
     id={"section1"}
     data={Data}
   />
   <Product
     title="Digi-Clamp"
-    dark={index++ % 2 === 0}
+    dark={0}
     id={"section2"}
   />
   <ContactUs
     title="Contact Us"
-    dark={index++ % 2 === 0}
+    dark={1}
     id={"section3"}
   />
 
   <FaqSection  
     questAns={Data.faq}
   title="FAQ"
-  dark={index++ % 2 === 0}
+  dark={0}
   id={"section4"}
   />
   </div>
@@ -114,11 +114,7 @@ function App() {
 
 
          
-        <LoginSection
-        title="Login"
-        dark={0}
-        id={"section8"}
-        />
+        
 
         <Route exact path="/" component={Base}  />
         <Route exact path="/home" component={Base} />
