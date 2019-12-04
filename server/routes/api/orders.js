@@ -22,6 +22,7 @@ const Order = require("../../models/Orders");
       .catch(function (error) {
         console.log(error);
       });
+      console.log("order email");
       
     res.redirect('/');
 
