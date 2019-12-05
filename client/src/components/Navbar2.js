@@ -11,7 +11,7 @@ export default class Navbar2 extends Component {
   render() {
     return (
   <div className="nav-content">
-  <Navbar bg="light" expand="lg" sticky="top">
+  <Navbar bg="light" expand="lg" fixed="top">
         
           <img
             src={logo}
@@ -34,7 +34,6 @@ export default class Navbar2 extends Component {
             
             <Nav.Link href="/#section2">Digi-Clamp</Nav.Link> 
 
-            <Nav.Link href="/procedures">Procedures</Nav.Link>
             <NavDropdown title="Procedures" id="basic-nav-dropdown">
               <NavDropdown.Item href="/procedures">Skin Tags</NavDropdown.Item>
               <NavDropdown.Item href="/procedures">Polydactyl</NavDropdown.Item>
