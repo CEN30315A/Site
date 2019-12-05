@@ -45,7 +45,6 @@ export default class Navbar2 extends Component {
               <NavDropdown.Item href="/procedures">Polydactyl</NavDropdown.Item>
               <NavDropdown.Item href="/procedures">Preaurical Tags</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/efficacy">Clinical Efficacy</Nav.Link>
             <Nav.Link href="/#section8">Order</Nav.Link>
             <Nav.Link href="/#section3">Contact Us</Nav.Link>
             <Nav.Link href="/#section4">FAQ</Nav.Link>
