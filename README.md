@@ -67,9 +67,9 @@ https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-c
 
 Bootstrap:
 
-https://react-bootstrap.github.io/components/table/
+https://react-bootstrap.github.io/components/table/  (used in Admin page)
 
-https://react-bootstrap.github.io/components/carousel/
+https://react-bootstrap.github.io/components/carousel/ (used in Procedures section)
 
 Smooth-scrolling navigation bar:
 
