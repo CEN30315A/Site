@@ -58,36 +58,64 @@ How to update database and server connections, ///kevin, would you be able to fi
 
 ## Credits 
 User Authentication Tutorial with Passport:
+
 https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+
 https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6eac4e38ee82
+
 https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-components-88190f8db718
+
 Bootstrap:
+
 https://react-bootstrap.github.io/components/table/
+
 https://react-bootstrap.github.io/components/carousel/
+
 Smooth-scrolling navigation bar:
+
 https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
+
 https://github.com/jamesqquick/React-With-Smooth-Scrolling
  
 ## List of all project features implemented and associated screenshots
 *Home page
-![Home Page](/public/images/home page.png)
+
+![Home Page](/client/public/images/home page.png)
+
 *Order Form
-![Order Form](/public/images/order form.png)
+
+![Order Form](/client/public/images/order form.png)
+
 *Backend included to store order form information
+
 *User Login and Authentication 
+
 	*Create account to login to the site as only users with accounts may order (as per request by our client)
+
 	*Backend that stores account information upon creation so that you may login as long as your account exists (passwords are hashed)
+
 	*Displays a user dashboard that welcomes them to the site + order button
-![Login](/public/images/login.png)
+
+![Login](/client/public/images/login.png)
+
 *Emailing System
+
 *Users receive an email upon account creation and upon order confirmation. The owner gets an email upon order confirmation as well so that he may process the order.
+
 *Admin Login
+
 	*If user is the admin, it displays the admin dashboard which displays all orders placed
-![Admin page](/public/images/admin.png)
+
+![Admin page](/client/public/images/admin.png)
+
 *Pictures, slideshows, site carousel at the top of the site
+
 *Campaign Analytics to see where the most popular platform is (analyze website hits via key)
+
 *Contact Us Email form 
-![Email form](/public/images/contactus.png)
+
+![Email form](/client/public/images/contactus.png)
+
 *Footer with Nav Links
 
 
