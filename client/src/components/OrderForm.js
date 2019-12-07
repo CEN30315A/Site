@@ -58,6 +58,7 @@ class OrderForm extends Component {
       if (response.ok) {
         alert("Thank you for ordering clamps. A confirmation email has been sent to " + document.querySelector("#email").value +".");
         console.log("Purchase Complete!");
+        this.setState({show: false});
       } 
     }
   
