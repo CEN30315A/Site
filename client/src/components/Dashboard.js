@@ -21,7 +21,7 @@ async componentDidMount(){
   data.map(transaction => {
       rows.push(
           <tr>
-              <td>Token</td>
+              <td>{transaction['id']}</td>
               <td>{transaction['email']} </td>
               <td>{transaction['date']} </td>
               <td>{transaction['quantity']} </td>
@@ -111,7 +111,7 @@ const adminPage =
   <Table striped bordered hover size="sm">
       <thead>
           <tr>
-          <th>Token (Transaction Number) </th>
+          <th>Stripe Transaction Id </th>
           <th>Email</th>
           <th>Date</th>
           <th>Quantity</th>

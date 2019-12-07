@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-exports.email = async function (req, res) {
+const email = exports.email = async function (req, res) {
 
   let mailOptions = {
     from: process.env.EMAIL_CRED_EMAIL,
@@ -68,14 +68,30 @@ exports.retrieve_visits = function (req, res) {
 }
 
 exports.charge = async function (req, res) {
-  console.log(req.body);
   try {
-    let {status} = await stripe.charges.create({
-      amount: 2000,
+    let {status, id} = await stripe.charges.create({
+      amount: req.body.quantity * process.env.CLAMP_COST,
       currency: "usd",
-      description: "An example charge",
+      description: req.body.quantity + " clamps for " + req.body.firstname + " " + req.body.lastname + " at " + req.body.email,
       source: req.body.token
     });
+    req.body.id = id;
+
+    let order = new Order(req.body)
+    order.save();
+  
+    const date = new Date();
+    const day = (date.getDate() < 10 ? '0' : '') + date.getDate();
+    const month = ((date.getMonth() + 1) < 10 ? '0' : '') + (date.getMonth() + 1); //January is 0!
+    const year = date.getFullYear();
+    var today = month + '/' + day + '/' + year;
+    email({
+      body: {
+        "recipients": [order.email, "OWNER"],
+        "subject": "XDG Site Order Placed",
+        "html": "<h2>Order placed with XDG site by " + order.firstname + " " + order.lastname + "</h2> <p>You ordered " + order.quantity + " clamps on " + today + " at " + date.getHours() + ":" + date.getMinutes() + ".</p>" + "<h2>Contact Info</h2> <p>Dr. J.C. Roig </p> <p>XDG Technologies, LLC</p> <p>6485 S.W. 51 Court</p> <p>Ocala, FL. 34474-5768</p> <p>Phone: (352) 812-1175</p>"
+      }
+    }, (res) => console.log(res));
 
     res.json({status});
   } catch (err) {
