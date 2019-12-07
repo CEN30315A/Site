@@ -4,6 +4,7 @@ export default function Home({ title, dark, id, data }) {
   const home_data = data.home.map(item => {
   	return <p>{item}</p>
   })
+
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>

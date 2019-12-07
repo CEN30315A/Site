@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+
+//Landing page
+//Front end to let people log in or register
 class Landing extends Component {
   render() {
     return (

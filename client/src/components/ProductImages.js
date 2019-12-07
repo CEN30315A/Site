@@ -14,7 +14,8 @@ import poly_before from '../poly_before.jpg';
 import poly_during_1 from '../poly_during_1.jpg';
 import poly_during_2 from '../poly_during_2.jpg';
 import poly_after from '../poly_after.jpg';
-
+//images for the product section
+//once clicked it will go to another product image.
 export default function ProductImages ({ title, dark, id }) {
 
   const [show1, setShow1] = useState(false);

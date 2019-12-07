@@ -2,6 +2,9 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+
+
+//private route to direct user to log in.
 const PrivateRoute = ({ component: Component, auth, ...rest }) => (
   <Route
     {...rest}

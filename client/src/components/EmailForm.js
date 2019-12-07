@@ -6,7 +6,7 @@ class EmailForm extends React.Component {
     super();
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+//on submit an email is sent to owner
   handleSubmit(event) {
     event.preventDefault();
     const data = {
@@ -23,7 +23,8 @@ class EmailForm extends React.Component {
       document.getElementById("EmailForm").reset();
   }
   
-
+//Email form front end
+//allows user to connect with website.
   render() {
     return (        
       <form onSubmit={this.handleSubmit} id="EmailForm">

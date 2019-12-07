@@ -6,7 +6,7 @@ export default class Navbar extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-
+//Navigation bar that when you click it scrolls to respective section
   render() {
     return (
       <nav className="nav" id="navbar">
