@@ -82,6 +82,8 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 
 ![Home Page](/client/public/images/homepage.png)
 
+*Scrolling Navigation Bar- highlights active section
+
 *Order Form
 
 ![Order Form](/client/public/images/orderform.png)
@@ -105,7 +107,7 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 *Admin Login
 
 	*If user is the admin, it displays the admin dashboard which displays all orders placed
-	
+
 	*Campaign Analytics to see where the most popular platform is (analyze website hits via key)
 
 ![Admin page](/client/public/images/admin.png)
