@@ -80,11 +80,11 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 ## List of all project features implemented and associated screenshots
 *Home page
 
-![Home Page](/client/public/images/home page.png)
+![Home Page](/client/public/images/homepage.png)
 
 *Order Form
 
-![Order Form](/client/public/images/order form.png)
+![Order Form](/client/public/images/orderform.png)
 
 *Backend included to store order form information
 
@@ -105,12 +105,12 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 *Admin Login
 
 	*If user is the admin, it displays the admin dashboard which displays all orders placed
+	
+	*Campaign Analytics to see where the most popular platform is (analyze website hits via key)
 
 ![Admin page](/client/public/images/admin.png)
 
 *Pictures, slideshows, site carousel at the top of the site
-
-*Campaign Analytics to see where the most popular platform is (analyze website hits via key)
 
 *Contact Us Email form 
 
