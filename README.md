@@ -102,6 +102,9 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 
 ![Login](/client/public/images/login.png)
 
+![Login](/client/public/images/dashboard.png)
+
+
 *Emailing System
 
 *Users receive an email upon account creation and upon order confirmation. The owner gets an email upon order confirmation as well so that he may process the order.
