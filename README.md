@@ -84,6 +84,8 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 
 *Scrolling Navigation Bar- highlights active section
 
+![Menu](/client/public/images/menu.png)
+
 *Order Form
 
 ![Order Form](/client/public/images/orderform.png)
@@ -119,6 +121,8 @@ https://github.com/jamesqquick/React-With-Smooth-Scrolling
 ![Email form](/client/public/images/contactus.png)
 
 *Footer with Nav Links
+
+![Footer](/client/public/images/footer.png)
 
 
 
