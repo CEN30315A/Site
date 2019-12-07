@@ -8,10 +8,16 @@ router.route('/email/')
 router.route('/c/*')
   .get(controller.campaign);
 
-  router.route('/retrieve_orders')
+router.route('/retrieve_orders')
   .get(controller.retrieve_orders);
 
-  router.route('/retrieve_visits')
+router.route('/retrieve_visits')
   .get(controller.retrieve_visits);
+
+router.route('/charge/')
+  .post(controller.charge);
+
+router.route('/clamp_price/')
+  .get(controller.getClampPrice);
   
 module.exports = router;
