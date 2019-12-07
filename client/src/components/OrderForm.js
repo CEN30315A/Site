@@ -2,6 +2,13 @@ import React, {Component} from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 import {CardElement, injectStripe} from 'react-stripe-elements';
 
+let clampCost;
+fetch("/clamp_price", {
+  method: "GET",
+  headers: {"Content-Type": "application/json"},
+}).then(response => response.json())
+.then(responseData => clampCost = responseData.cost);
+
 class OrderForm extends Component {
     constructor(props) {
       super(props);
@@ -59,6 +66,10 @@ class OrderForm extends Component {
         this.setState({show: !this.state.show});
     }
 
+    const quantityUpdate = () => {
+      document.querySelector("#totalCost").textContent= "Total: $" + (clampCost * document.querySelector("#quantity").value / 100).toFixed(2);
+    }
+
       if (this.state.complete) return <h1>Purchase Complete</h1>;
       return (
         <div>
@@ -81,7 +92,7 @@ class OrderForm extends Component {
                     <ReactBootstrap.Form.Row>
                         <ReactBootstrap.Col>
                             <ReactBootstrap.Form.Label>Quantity</ReactBootstrap.Form.Label>
-                            <ReactBootstrap.Form.Control placeholder="Quantity" name="quantity" id="quantity" />
+                            <ReactBootstrap.Form.Control placeholder="Quantity" name="quantity" id="quantity" onChange={quantityUpdate} />
                         </ReactBootstrap.Col>
                     </ReactBootstrap.Form.Row>
                     <ReactBootstrap.Form.Row>
@@ -186,6 +197,7 @@ class OrderForm extends Component {
                           <ReactBootstrap.Form.Control name="zipcode" id="zipcode" />
                       </ReactBootstrap.Form.Group>
                   </ReactBootstrap.Form.Row>
+                  <ReactBootstrap.Form.Label id="totalCost">Total</ReactBootstrap.Form.Label>
                   <div className="checkout">
                     <CardElement />
                   </div>

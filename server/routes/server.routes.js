@@ -16,5 +16,8 @@ router.route('/retrieve_visits')
 
 router.route('/charge/')
   .post(controller.charge);
+
+router.route('/clamp_price/')
+  .get(controller.getClampPrice);
   
 module.exports = router;

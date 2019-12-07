@@ -99,3 +99,7 @@ exports.charge = async function (req, res) {
     res.status(500).end();
   }
 }
+
+exports.getClampPrice = function (req, res) {
+  res.send({cost: process.env.CLAMP_COST});
+}
