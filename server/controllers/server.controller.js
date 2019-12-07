@@ -11,6 +11,7 @@ let transporter = nodemailer.createTransport({
   }
 });
 
+//backend for mailing, requiring email sent.
 const email = exports.email = async function (req, res) {
 
   let mailOptions = {
@@ -42,7 +43,7 @@ const email = exports.email = async function (req, res) {
     }
   });
 }
-
+//Campaign backend
 exports.campaign = function (req, res) {
   new Visit({
     key: req.path.substring(3),
@@ -66,7 +67,7 @@ exports.retrieve_visits = function (req, res) {
     res.send(all);
   })
 }
-
+//Paynent backend
 exports.charge = async function (req, res) {
   try {
     let {status, id} = await stripe.charges.create({
@@ -99,7 +100,7 @@ exports.charge = async function (req, res) {
     res.status(500).end();
   }
 }
-
+//clamp costs using environment variable
 exports.getClampPrice = function (req, res) {
   res.send({cost: process.env.CLAMP_COST});
 }

@@ -8,7 +8,8 @@ export default class Header extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-
+// Home screen picture.
+// In order to add more pictures, add more images via the carousel item.
   render() {
     return (
       <div className="header">

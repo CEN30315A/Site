@@ -1,6 +1,7 @@
 import React from "react";
 import OrderForm from './OrderForm';
 
+//order form only appearing after log in
 export default function Order({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>

@@ -13,7 +13,7 @@ class Dashboard extends Component {
     orders: [],
     visits: []
 };
-
+//Data for admins
 async componentDidMount(){
   const response = await axios.get('/retrieve_orders')
   let data = response['data']

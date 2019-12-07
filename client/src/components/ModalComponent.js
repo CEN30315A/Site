@@ -8,7 +8,8 @@ export default function ModalComponent ({body}) {
 	const handleShow = () => {
 		setShow(!show);
     }
-
+//Pictures that user is able to enlarge
+//Developer may add more using the bottom template
 	return (
         <div className="section">
             <div className="section-content">

@@ -1,5 +1,7 @@
 import React from "react";
 
+//section for the about us
+// includes title and information
 export default function AboutUs({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>

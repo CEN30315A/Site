@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 import {CardElement, injectStripe} from 'react-stripe-elements';
 
+//clamp cost
 let clampCost;
 fetch("/clamp_price", {
   method: "GET",
@@ -16,7 +17,7 @@ class OrderForm extends Component {
                     show: false};
       this.submit = this.submit.bind(this);
     }
-  
+  //on submit values are posted with token
     async submit(ev) {
       ev.preventDefault();
 
@@ -70,7 +71,7 @@ class OrderForm extends Component {
     const quantityUpdate = () => {
       document.querySelector("#totalCost").textContent= "Total: $" + (clampCost * document.querySelector("#quantity").value / 100).toFixed(2);
     }
-
+//Order form section including stripe payment system
       if (this.state.complete) return <h1>Purchase Complete</h1>;
       return (
         <div>

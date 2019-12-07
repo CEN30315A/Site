@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//product information
 export default function Product({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>

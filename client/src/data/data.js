@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+//Data used for the Home page
 export default {
     sections: [
                 "home",

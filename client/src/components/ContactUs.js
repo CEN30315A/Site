@@ -1,6 +1,6 @@
 import React from "react";
 import EmailForm from "./EmailForm";
-
+//contact us section including the a email form that can send a message to the owner
 export default function ContactUs({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
