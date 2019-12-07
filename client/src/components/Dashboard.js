@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from ".././actions/authActions";
 import OrderForm from './OrderForm';
 import Table from 'react-bootstrap/Table'
+import {Elements, StripeProvider} from 'react-stripe-elements';
 
 const axios = require("axios");
 
@@ -17,7 +18,7 @@ async componentDidMount(){
   const response = await axios.get('/retrieve_orders')
   let data = response['data']
   let rows = []
-  data.map(transaction=>{
+  data.map(transaction => {
       rows.push(
           <tr>
               <td>Token</td>
@@ -34,6 +35,7 @@ async componentDidMount(){
               <td>{transaction['zipcode']} </td>
           </tr>
       );
+      return rows;
   });
   this.setState({orders: rows});
           
@@ -48,6 +50,7 @@ async componentDidMount(){
               <td>{visit.key} </td>
           </tr>
       );
+      return rows;
   });
   this.setState({visits: rows});
 }
@@ -73,7 +76,13 @@ async componentDidMount(){
       <br/><br/>
       <h5>Order below</h5>
       <br/>
-      <OrderForm/>
+      <StripeProvider apiKey="pk_test_RkzXNGA5f2dDJEpvz7eMYXDp00dagtLCzC">
+        <div className="example">
+          <Elements>
+            <OrderForm />
+          </Elements>
+        </div>
+      </StripeProvider>
       <br/>
       <button
         style={{

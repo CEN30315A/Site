@@ -8,10 +8,13 @@ router.route('/email/')
 router.route('/c/*')
   .get(controller.campaign);
 
-  router.route('/retrieve_orders')
+router.route('/retrieve_orders')
   .get(controller.retrieve_orders);
 
-  router.route('/retrieve_visits')
+router.route('/retrieve_visits')
   .get(controller.retrieve_visits);
+
+router.route('/charge/')
+  .post(controller.charge);
   
 module.exports = router;

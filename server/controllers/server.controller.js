@@ -1,5 +1,7 @@
 const nodemailer = require('nodemailer');
 const Visit = require("../models/Visit");
+const stripe = require("stripe")(process.env.STRIPE_KEY);
+const Order = require('../models/Orders');
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -63,4 +65,21 @@ exports.retrieve_visits = function (req, res) {
   Visit.find({ "date": { $gte: date } }).then(all => {
     res.send(all);
   })
+}
+
+exports.charge = async function (req, res) {
+  console.log(req.body);
+  try {
+    let {status} = await stripe.charges.create({
+      amount: 2000,
+      currency: "usd",
+      description: "An example charge",
+      source: req.body.token
+    });
+
+    res.json({status});
+  } catch (err) {
+    console.log(err);
+    res.status(500).end();
+  }
 }
