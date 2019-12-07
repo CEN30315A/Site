@@ -1,11 +1,10 @@
 import React from "react";
 
-
-export default function LoginSection({ title, dark, id }) {
+//Area for the log in section
+export default function LoginSection({dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>
-        
       </div>
     </div>
   );

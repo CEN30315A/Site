@@ -5,6 +5,9 @@ import large_skin_tag from '../large_skin_tag.jpg';
 import clinical_prea from '../clinical_prea.JPG';
 import clinical_poly from '../clinical_poly.JPG';
 
+//Clinical efficacy section
+//Clickable cards that bring you to more information via google drive
+
 export default function ClinicalEfficacy({ title, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>

@@ -4,7 +4,7 @@ const axios = require("axios");
 const Order = require("../../models/Orders");
 const { email } = require('../../controllers/server.controller.js');
 
-
+//Backend for submiting an order
 router.post('/submit_order', function (req, res) {
 
   let order = new Order(req.body)
@@ -23,6 +23,7 @@ router.post('/submit_order', function (req, res) {
     }
   }, (res) => console.log(res));
 
+  //redirects to home screen
   res.redirect('/');
 
 })

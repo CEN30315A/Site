@@ -83,6 +83,7 @@ export default function ProductImages ({ title, dark, id }) {
     setShow13(!show13);
   }
 
+  
 	return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>

@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+//data linked to respective sections
 export default {
     sections: [
                 "home",

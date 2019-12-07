@@ -7,7 +7,7 @@ function OrderForm() {
     const handleShow = () => {
         setShow(!show);
     }
-
+//Order form to get user information for purchase
     return (
         <div>
             <button className="btn btn-outline-primary" type="button" onClick={handleShow}>

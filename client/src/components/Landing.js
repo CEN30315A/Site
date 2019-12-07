@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+//In order to register or log in
 class Landing extends Component {
   render() {
     return (

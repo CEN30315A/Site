@@ -8,7 +8,8 @@ export default class Header extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-
+// Header includes a picture
+// If needed you are able to add more pictures.
   render() {
     return (
       <div className="header">

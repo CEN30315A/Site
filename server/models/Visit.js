@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-// Create Schema
+// Create Schema that describes the key used at a specific date
 const CampaignSchema = new Schema({
   key: {
     type: String,

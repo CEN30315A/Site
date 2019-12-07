@@ -6,7 +6,7 @@ class EmailForm extends React.Component {
     super();
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+//on submit the data is sent to user
   handleSubmit(event) {
     event.preventDefault();
     const data = {
@@ -23,7 +23,7 @@ class EmailForm extends React.Component {
       document.getElementById("EmailForm").reset();
   }
   
-
+//Email form contact and textbox
   render() {
     return (        
       <form onSubmit={this.handleSubmit} id="EmailForm">

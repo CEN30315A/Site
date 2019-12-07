@@ -1,5 +1,6 @@
 import React from "react";
 
+//section component templates.
 export default function Section({ title, subtitle, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>

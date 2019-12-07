@@ -96,7 +96,6 @@ async componentDidMount(){
 
 
 
-
 const adminPage = 
 <div>
   <Table striped bordered hover size="sm">

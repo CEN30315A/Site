@@ -3,6 +3,9 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { Link} from "react-scroll";
 import { SocialIcon } from 'react-social-icons';
 
+// Footer section area
+// allows for user to see the components of the website in a small area
+// Also includes links to social media
 const Footer = () => {
   return (
     <MDBFooter color="primary-color" className="font-small pt-4 mt-4">

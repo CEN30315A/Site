@@ -6,7 +6,7 @@ export default class Navbar extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   };
-
+//navigation bar includes all the components and brings you to them.
   render() {
     return (
       <nav className="nav" id="navbar">
