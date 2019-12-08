@@ -58,11 +58,6 @@ function App() {
           id={"section" + index}
           data={Data}
         />
-        <AboutUs
-          title="About Us"
-          dark={index++ % 2 === 0}
-          id={"section" + index}
-        />
         <Product
           title="Digi-Clamp"
           dark={index++ % 2 === 0}
@@ -90,12 +85,19 @@ function App() {
         dark={index++ % 2 === 0}
         id={"section" + index}
         />
+
+        <AboutUs
+          title="About Us"
+          dark={index++ % 2 === 0}
+          id={"section" + index}
+        />
          
         <LoginSection
         title="Login"
         dark={0}
         id={"section8"}
         />
+
 
         <Route exact path="/" component={Landing}  />
         <Route exact path="/register" component={Register} />

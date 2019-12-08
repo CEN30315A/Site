@@ -26,7 +26,7 @@
   --off-white: #fafafa;
 }
 .nav {
-  background-color:#245478;
+  background-color:white;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -68,7 +68,7 @@
 .nav-item {
   display: inline;
   margin-left: 1rem;
-  color: white;
+  color: grey;
   font-size: 18px;
 }
 

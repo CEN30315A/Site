@@ -6,6 +6,7 @@ export default function Product({ title, dark, id }) {
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>
         <h1>{title}</h1>
+        <img src={require('../digiclamp.jpg')} height="500px" width="500px" />
         <p>
         XDG Technologies has developed a proprietary, compact, handheld medical device for the treatment of Postaxial Polydactyly Type B in newborns with extra fingers and toes, and the removal of skin tags for people of all ages.
 <br/><br/>
