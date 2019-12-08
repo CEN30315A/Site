@@ -39,7 +39,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                About Us
+                Digi-Clamp
               </Link>
             </li>
             <li className="nav-item">
@@ -51,25 +51,13 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Digi-Clamp
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section4"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
                 Procedures
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section5"
+                to="section4"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -93,7 +81,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section6"
+                to="section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -105,13 +93,25 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section7"
+                to="section6"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
                 FAQ
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="section7"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                About Us
               </Link>
             </li>
             <li className="nav-item">
@@ -126,6 +126,7 @@ export default class Navbar extends Component {
                 Login
               </Link>
             </li>
+            
           </ul>
         </div>
       </nav>
