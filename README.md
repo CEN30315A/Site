@@ -47,14 +47,17 @@ All in all, if you make any changes, close the server by doing ctrl+c in the ter
 
 ## Deployment Information (Heroku)
 
-As far as implementing your changes from local machine to the deployed app, there is no extra steps to do so. The deployed app is synced with master, so once you merge any local changes to the master branch, the site will be automatically updated with the changes. 
+As far as implementing your changes from local machine to the deployed app, there is no extra steps to do so. The deployed app is synced with master, so once you merge any local changes to the master branch, the site will be automatically updated with the changes. This can also be changed in the settings. 
 
+Our site is deployed at https://xdg-site.herokuapp.com, and the alternate site is at https://xdg-real.herokuapp.com.
 
-/////////////Kevin fill in any info you deem as necessary for them to know about the app deployment here//////////////
+We will provide the heroku account information if you choose to use heroku or we can set it up on a new account. We may need to move to digital ocean for the needs of the client. However, we believe heroku is the best tool for this. 
 
+For the app to deploy successfully, the keys must be added in the config var, or it will fail. Locally we have dotenv set up where we have these variables in .env, but for Heroku, these are the keys that need to be filled in.
 
-How to update database and server connections, ///kevin, would you be able to fill in this part?
+![Config Vars](/client/public/images/heroku.png)
 
+To update server and database connections, the config vars must be updated accordingly. The mongo keys should be updateed, and the keys for Stripe and the other use cases should match the account used. 
 
 ## Credits 
 User Authentication Tutorial with Passport:
