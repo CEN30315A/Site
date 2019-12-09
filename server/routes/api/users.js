@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
-const axios = require("axios");
+const {email} = require("../../controllers/server.controller");
 
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
@@ -52,14 +52,13 @@ router.post("/register", (req, res) => {
       const month = ((date.getMonth() + 1) < 10 ?  '0' : '') + (date.getMonth() + 1); //January is 0!
       const year = date.getFullYear();
       var today = month + '/' + day + '/' + year;
-      axios.post('/email', {
-        "recipients": [newUser.email],
-        "subject": "XDG Site User Created",
-        "html": "<h1>Account Created for XDG Site</h1> <p>An account with the email " + newUser.email + " on " + today + " at " + date.getHours() + ":" + date.getMinutes() + ".</p>"
-      })
-        .catch(function (error) {
-          console.log(error);
-        });
+      email({
+        body: {
+          "recipients": [newUser.email],
+          "subject": "XDG Site User Created",
+          "html": "<h1>Account Created for XDG Site</h1> <p>An account with the email " + newUser.email + " on " + today + " at " + date.getHours() + ":" + date.getMinutes() + ".</p>"
+        }
+      }, (res) => console.log(res));
     }
   });
 });
