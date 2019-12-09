@@ -12,23 +12,9 @@ Navigate to the [XDG Technologies Google Drive](https://drive.google.com/drive/f
 
 In the root project directory ('/Site'), you can run:
 
-### `npm run install-all`
+### `npm install`
 
 This installs all of the necessary packages and dependencies for the site that we implemented. This should be done first as the app will not work without these dependencies.
-
-### `npm start && npm run build`
-
-This will do everything you need to get the site and server up in one command. Below is an explanation of what each of these commands does and when to use them.
-
-### `npm start`
-
-If you make any changes to anything client side or within the client folder (i.e. visual changes to the site etc.)
-
-Runs the app in the development mode.<br />
-Open [http://localhost](http://localhost) to view it in the browser. (it defaults to port 80 to allow for heroku deployment )
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm run build`
 
@@ -44,6 +30,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 All in all, if you make any changes, close the server by doing ctrl+c in the terminal you ran `npm start && npm run build`, save your changes, and re-run `npm start && npm run build` to see your changes.
+
+### `npm start`
+
+If you make any changes to anything client side or within the client folder (i.e. visual changes to the site etc.)
+
+Runs the app in the development mode.<br />
+Open [http://localhost](http://localhost) to view it in the browser. (it defaults to port 80 to allow for heroku deployment )
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
 ## Deployment Information (Heroku)
 
